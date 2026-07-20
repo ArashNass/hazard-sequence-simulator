@@ -37,18 +37,20 @@
     .segmented{display:grid;grid-template-columns:repeat(2,1fr);gap:4px;padding:4px;background:var(--surface-soft);border:1px solid var(--border);border-radius:10px}.seg-btn{border:0;background:transparent;border-radius:7px;padding:8px 7px;color:var(--muted);font-size:11px;font-weight:750;cursor:pointer}.seg-btn.active{background:var(--surface);color:var(--text);box-shadow:var(--shadow-sm)}
     .field-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{min-width:0}.field.full{grid-column:1/-1}.field label{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 5px;font-size:11px;font-weight:700;color:var(--muted)}.field .unit{font-size:9.5px;color:var(--muted-2);font-weight:650}.input-wrap{position:relative}.input,.select{width:100%;min-height:38px;border:1px solid var(--border);border-radius:9px;background:var(--surface);color:var(--text);padding:8px 10px;transition:150ms}.input:hover,.select:hover{border-color:var(--border-strong)}.input:focus,.select:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent);outline:0}.range-row{display:grid;grid-template-columns:1fr 64px;gap:8px;align-items:center}.range{width:100%;accent-color:var(--accent)}.mini-value{min-height:34px;border:1px solid var(--border);border-radius:8px;background:var(--surface);display:grid;place-items:center;font-size:11px;font-weight:750}.hint{font-size:10.5px;color:var(--muted);margin-top:5px}.error-text{font-size:10.5px;color:var(--danger);margin-top:5px}.advanced{margin-top:11px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft)}.advanced summary{cursor:pointer;list-style:none;padding:10px 11px;font-size:11px;font-weight:750;display:flex;align-items:center;justify-content:space-between}.advanced summary::-webkit-details-marker{display:none}.advanced summary::after{content:"+";color:var(--muted);font-size:16px}.advanced[open] summary::after{content:"–"}.advanced-content{padding:2px 11px 12px}
     .toggle-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:9px 0}.toggle-copy strong{display:block;font-size:11.5px}.toggle-copy span{display:block;color:var(--muted);font-size:10px;margin-top:2px}.switch{width:40px;height:23px;border-radius:999px;background:var(--border-strong);padding:3px;cursor:pointer;border:0;transition:150ms}.switch::before{content:"";display:block;width:17px;height:17px;border-radius:50%;background:#fff;transition:150ms;box-shadow:0 1px 3px rgba(0,0,0,.2)}.switch.on{background:var(--accent)}.switch.on::before{transform:translateX(17px)}
-    .hero{display:block;margin-bottom:15px}.hero h1{margin:0;font-size:22px;line-height:1.18;letter-spacing:-.035em}.hero p{margin:7px 0 0;max-width:720px;color:var(--muted);font-size:13px}.hero-actions{display:flex;align-items:center;gap:8px;margin-top:12px}.result-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:14px}.metric-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;box-shadow:var(--shadow-sm);min-width:0}.metric-label{font-size:10px;text-transform:uppercase;letter-spacing:.065em;color:var(--muted);font-weight:800}.metric-value{font-size:21px;font-weight:790;letter-spacing:-.03em;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.metric-sub{font-size:10.5px;color:var(--muted);margin-top:2px}.delta-good{color:var(--success)}.delta-bad{color:var(--danger)}
-    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}.card+.card{margin-top:14px}.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:15px 16px 12px;border-bottom:1px solid var(--border)}.card-head h2{font-size:14px;margin:0;font-weight:770}.card-head p{font-size:11px;color:var(--muted);margin:3px 0 0}.card-actions{display:flex;align-items:center;gap:7px}.canvas-wrap{position:relative;height:430px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface-soft) 75%,transparent),var(--surface))}.canvas-wrap.small{height:280px}.chart-canvas{width:100%;height:100%;display:block}.chart-tooltip{position:absolute;z-index:5;pointer-events:none;min-width:180px;max-width:250px;padding:9px 10px;border-radius:9px;background:color-mix(in srgb,var(--text) 92%,transparent);color:var(--surface);font-size:10.5px;box-shadow:var(--shadow-md);opacity:0;transform:translate(-50%,-112%);transition:opacity 100ms}.chart-tooltip.show{opacity:1}.legend{display:flex;flex-wrap:wrap;gap:12px;padding:9px 16px 13px;color:var(--muted);font-size:10.5px}.legend-item{display:flex;align-items:center;gap:6px}.legend-dot{width:8px;height:8px;border-radius:50%}.legend-line{width:20px;height:3px;border-radius:99px}
-    .story-list{padding:4px 16px 14px}.story-item{display:grid;grid-template-columns:78px 12px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid var(--border)}.story-item:last-child{border-bottom:0}.story-time{font-size:10.5px;color:var(--muted);font-weight:720}.story-marker{width:9px;height:9px;border-radius:50%;margin-top:3px}.story-title{font-size:11.5px;font-weight:750}.story-text{font-size:10.8px;color:var(--muted);margin-top:3px}.empty-state{padding:38px 20px;text-align:center;color:var(--muted)}
+    .hero{display:block;margin-bottom:15px}.hero h1{margin:0;font-size:22px;line-height:1.18;letter-spacing:-.035em}.hero p{margin:7px 0 0;max-width:720px;color:var(--muted);font-size:13px}.hero-actions{display:flex;align-items:center;gap:8px;margin-top:12px}
+    .takeaway-line{display:flex;align-items:center;gap:10px;padding:12px 15px;margin-bottom:14px;border-radius:11px;background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),color-mix(in srgb,var(--accent) 4%,var(--surface)));border:1px solid color-mix(in srgb,var(--accent) 22%,var(--border));font-size:12.5px;font-weight:650;line-height:1.5;color:var(--text)}.takeaway-line[hidden]{display:none}.takeaway-icon{flex:0 0 auto;font-size:16px}.takeaway-line strong{font-weight:800}
+    .result-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:14px}.metric-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;box-shadow:var(--shadow-sm);min-width:0}.metric-label{font-size:10px;text-transform:uppercase;letter-spacing:.065em;color:var(--muted);font-weight:800}.metric-value{font-size:21px;font-weight:790;letter-spacing:-.03em;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.metric-sub{font-size:10.5px;color:var(--muted);margin-top:2px}.delta-good{color:var(--success)}.delta-bad{color:var(--danger)}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);overflow:hidden}.card+.card{margin-top:14px}.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:15px 16px 12px;border-bottom:1px solid var(--border)}.card-head h2{font-size:14px;margin:0;font-weight:770}.card-head p{font-size:11px;color:var(--muted);margin:3px 0 0}.card-actions{display:flex;align-items:center;gap:7px}.canvas-wrap{position:relative;height:430px;background:linear-gradient(180deg,color-mix(in srgb,var(--surface-soft) 75%,transparent),var(--surface))}.canvas-wrap.small{height:280px}.chart-canvas{width:100%;height:100%;display:block}.chart-tooltip{position:fixed;z-index:200;pointer-events:none;min-width:180px;max-width:250px;padding:9px 10px;border-radius:9px;background:color-mix(in srgb,var(--text) 92%,transparent);color:var(--surface);font-size:10.5px;box-shadow:var(--shadow-md);opacity:0;transform:translate(-50%,-112%);transition:opacity 100ms}.chart-tooltip.show{opacity:1}.legend{display:flex;flex-wrap:wrap;gap:12px;padding:9px 16px 13px;color:var(--muted);font-size:10.5px}.legend-item{display:flex;align-items:center;gap:6px}.legend-dot{width:8px;height:8px;border-radius:50%}.legend-line{width:20px;height:3px;border-radius:99px}
+    .mc-stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 16px 4px}.mc-stat{padding:9px 10px;border:1px solid var(--border);border-radius:9px;background:var(--surface-soft)}.mc-stat-label{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}.mc-stat-values{display:flex;align-items:baseline;gap:6px;margin-top:4px}.mc-stat-b{font-size:13px;font-weight:800;color:var(--danger)}.mc-stat-arrow{font-size:10px;color:var(--muted-2)}.mc-stat-m{font-size:13px;font-weight:800;color:var(--accent)}
+    .story-list{padding:4px 16px 14px}.story-item{display:grid;grid-template-columns:56px 34px 1fr;column-gap:11px;padding:12px 0;position:relative}.story-item:not(:last-child)::after{content:'';position:absolute;left:73px;top:44px;bottom:-2px;width:2px;background:var(--border)}.story-time{font-size:10.5px;color:var(--muted);font-weight:720;padding-top:6px}.story-icon-col{display:flex;justify-content:center;padding-top:1px}.story-icon{width:28px;height:28px;border-radius:7px;display:grid;place-items:center;font-size:11.5px;font-weight:800;color:#fff;line-height:1;flex:0 0 auto;position:relative;z-index:1;box-shadow:0 0 0 3px var(--surface)}.story-content{min-width:0;padding-top:1px}.story-title{font-size:11.5px;font-weight:750;line-height:1.4}.story-text{font-size:10.8px;color:var(--muted);margin-top:3px;line-height:1.5}.story-impact{display:flex;align-items:center;gap:7px;margin-top:8px;flex-wrap:wrap}.impact-label{font-size:9.5px;color:var(--muted-2);font-weight:700;text-transform:uppercase;letter-spacing:.04em}.impact-bar{width:70px;height:6px;border-radius:4px;background:var(--border);overflow:hidden}.impact-bar-fill{height:100%;border-radius:4px}.impact-value{font-size:10px;font-weight:750;color:var(--text)}.impact-delta{font-size:9.5px;font-weight:750}.impact-delta.up{color:var(--danger)}.story-tag{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:999px;background:var(--warning-soft);color:color-mix(in srgb,var(--warning) 80%,var(--text))}.empty-state{padding:38px 20px;text-align:center;color:var(--muted)}
     .mc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:14px}.compare-table{width:100%;border-collapse:collapse;font-size:11px}.compare-table th,.compare-table td{padding:10px 12px;border-bottom:1px solid var(--border);text-align:right}.compare-table th:first-child,.compare-table td:first-child{text-align:left}.compare-table th{color:var(--muted);font-size:9.5px;text-transform:uppercase;letter-spacing:.06em}.compare-table tr:last-child td{border-bottom:0}.compare-table .better{color:var(--success);font-weight:750}
     .insight-card{padding:13px;border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface-soft);margin-bottom:12px}.insight-card h3{margin:0 0 7px;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.insight-value{font-size:20px;font-weight:790;letter-spacing:-.03em}.insight-card p{font-size:10.8px;color:var(--muted);margin:7px 0 0}.risk-meter{height:7px;border-radius:99px;background:var(--border);overflow:hidden;margin-top:9px}.risk-meter span{display:block;height:100%;background:linear-gradient(90deg,var(--success),var(--warning),var(--danger));border-radius:inherit}.event-chips{display:flex;flex-wrap:wrap;gap:6px}.chip{display:inline-flex;align-items:center;gap:5px;padding:5px 7px;border-radius:8px;border:1px solid var(--border);background:var(--surface);font-size:10px;font-weight:700}.chip i{width:7px;height:7px;border-radius:50%}.narrative{font-size:11px;color:var(--muted);line-height:1.55}.method-list{margin:0;padding-left:17px;color:var(--muted);font-size:10.5px}.method-list li+li{margin-top:6px}.method-list a{color:var(--accent);text-decoration:underline;text-underline-offset:2px}.notice{padding:10px 11px;border-radius:9px;font-size:10.5px;border:1px solid color-mix(in srgb,var(--warning) 28%,var(--border));background:var(--warning-soft);color:color-mix(in srgb,var(--warning) 82%,var(--text))}
     .status-badge{cursor:pointer;font-family:inherit}.status-badge:hover{filter:brightness(.98);transform:translateY(-1px)}
     .simple-setup{padding:13px;border:1px solid var(--border);border-radius:12px;background:var(--surface-soft)}.simple-setup .toggle-row{border-top:1px solid var(--border)}.simple-setup .toggle-row:first-of-type{margin-top:9px}.preset-note{font-size:10.5px;color:var(--muted);margin-top:6px}.preset-note.changed{color:var(--accent);font-weight:700}.index-explainer{margin-top:11px;padding:10px 11px;border:1px solid color-mix(in srgb,var(--accent) 24%,var(--border));border-radius:9px;background:var(--accent-soft);font-size:10.8px;color:color-mix(in srgb,var(--accent) 78%,var(--text));line-height:1.5}.index-explainer strong{display:block;color:var(--text);margin-bottom:2px}
-    .advanced.major{margin-top:13px;background:var(--surface)}.advanced.major>summary{padding:12px;font-size:12px}.advanced-caption{display:block;font-size:10px;color:var(--muted);font-weight:550;margin-top:2px}.parameter-group{padding:13px 0;border-bottom:1px solid var(--border)}.parameter-group:first-child{padding-top:4px}.parameter-group:last-child{border-bottom:0;padding-bottom:2px}.parameter-title{font-size:11.5px;font-weight:780;margin:0 0 9px}.parameter-description{font-size:10.5px;color:var(--muted);margin:-5px 0 10px}.topic-section{padding:14px 0;border-top:1px solid var(--border)}.topic-section:first-of-type{border-top:0;padding-top:4px}.topic-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}.topic-title{font-size:12px;font-weight:800;margin:0}.topic-description{font-size:10.5px;color:var(--muted);margin:3px 0 0;line-height:1.45}.topic-advanced{margin-top:9px;background:var(--surface)}.topic-advanced summary{padding:9px 10px}.topic-advanced .advanced-content{padding:2px 10px 11px}.play-readout{min-width:178px;min-height:36px;display:flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);color:var(--muted);font-size:10.5px;font-weight:700;line-height:1.25;text-align:center}.story-item{transition:background 140ms,border-color 140ms,transform 140ms}.story-item.active{background:color-mix(in srgb,var(--accent) 9%,transparent);border-color:color-mix(in srgb,var(--accent) 28%,var(--border));box-shadow:inset 3px 0 0 var(--accent);transform:translateX(2px)}.story-item.active .story-title{color:var(--accent)}.story-overflow-note{padding:10px 0 2px;color:var(--muted);font-size:10.5px}.timeline-live-note{font-size:10px;color:var(--muted)}
+    .advanced.major{margin-top:13px;background:var(--surface)}.advanced.major>summary{padding:12px;font-size:12px}.advanced-caption{display:block;font-size:10px;color:var(--muted);font-weight:550;margin-top:2px}.parameter-group{padding:13px 0;border-bottom:1px solid var(--border)}.parameter-group:first-child{padding-top:4px}.parameter-group:last-child{border-bottom:0;padding-bottom:2px}.parameter-title{font-size:11.5px;font-weight:780;margin:0 0 9px}.parameter-description{font-size:10.5px;color:var(--muted);margin:-5px 0 10px}.topic-section{padding:14px 0;border-top:1px solid var(--border)}.topic-section:first-of-type{border-top:0;padding-top:4px}.topic-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px}.topic-title{font-size:12px;font-weight:800;margin:0}.topic-description{font-size:10.5px;color:var(--muted);margin:3px 0 0;line-height:1.45}.topic-advanced{margin-top:9px;background:var(--surface)}.topic-advanced summary{padding:9px 10px}.topic-advanced .advanced-content{padding:2px 10px 11px}.play-readout{min-width:178px;min-height:36px;display:flex;align-items:center;justify-content:center;padding:7px 10px;border:1px solid var(--border);border-radius:10px;background:var(--surface-soft);color:var(--muted);font-size:10.5px;font-weight:700;line-height:1.25;text-align:center}.story-item{transition:background 140ms,border-color 140ms;padding:12px 8px;margin:0 -8px;border-radius:9px}.story-item.active{background:color-mix(in srgb,var(--accent) 9%,transparent);border-color:color-mix(in srgb,var(--accent) 28%,var(--border));box-shadow:inset 3px 0 0 var(--accent)}.story-item.active .story-title{color:var(--accent)}.story-overflow-note{padding:10px 0 2px;color:var(--muted);font-size:10.5px}.timeline-live-note{font-size:10px;color:var(--muted)}
     .label-main{display:inline-flex;align-items:center;gap:5px;min-width:0}.field-help{position:relative;width:17px;height:17px;flex:0 0 auto;border:1px solid var(--border-strong);border-radius:50%;background:var(--surface);color:var(--muted);display:inline-grid;place-items:center;font-size:10px;font-weight:800;cursor:help;padding:0}.field-help::after{content:attr(data-tooltip);position:absolute;left:0;bottom:calc(100% + 8px);z-index:40;width:220px;padding:8px 9px;border-radius:8px;background:color-mix(in srgb,var(--text) 94%,transparent);color:var(--surface);font-size:10.5px;font-weight:550;line-height:1.45;text-align:left;box-shadow:var(--shadow-md);opacity:0;pointer-events:none;transform:translateY(4px);transition:120ms}.field-help:hover::after,.field-help:focus-visible::after{opacity:1;transform:none}.field-help[aria-label]{font-family:inherit}
     .run-zone{position:sticky;bottom:-18px;margin:14px -18px -18px;padding:12px 18px 18px;background:linear-gradient(180deg,transparent 0,var(--surface) 20%);z-index:5}.run-status{display:flex;align-items:flex-start;gap:8px;padding:9px 10px;margin-bottom:8px;border-radius:9px;font-size:10.8px;line-height:1.4}.run-status.stale{background:var(--warning-soft);color:color-mix(in srgb,var(--warning) 82%,var(--text));border:1px solid color-mix(in srgb,var(--warning) 25%,var(--border))}.run-status.error{background:var(--danger-soft);color:var(--danger);border:1px solid color-mix(in srgb,var(--danger) 25%,var(--border))}.run-status.ok{background:var(--success-soft);color:var(--success);border:1px solid color-mix(in srgb,var(--success) 25%,var(--border))}.run-status[hidden]{display:none}.status-icon{font-weight:900;line-height:1.2}.run-helper{font-size:10px;color:var(--muted);text-align:center;margin-top:6px}
     .chart-summary{padding:9px 16px 2px;color:var(--muted);font-size:10.8px;line-height:1.5}.modal-explainer{padding:12px 13px;border-radius:10px;background:var(--accent-soft);border:1px solid color-mix(in srgb,var(--accent) 25%,var(--border));margin:14px 0}.modal-explainer strong{display:block;font-size:12px;color:var(--text);margin-bottom:3px}.modal-explainer span{font-size:11.5px;color:var(--muted);line-height:1.55}.modal-limit{font-size:11.5px!important}.compact-modal{width:min(540px,96vw)}.test-list{display:grid;gap:7px;margin-top:14px;max-height:45vh;overflow:auto}.test-item{display:flex;align-items:flex-start;gap:9px;padding:9px 10px;border:1px solid var(--border);border-radius:9px;background:var(--surface-soft);font-size:11px}.test-icon{width:18px;height:18px;border-radius:50%;display:grid;place-items:center;flex:0 0 auto;font-size:11px;font-weight:900}.test-item.pass .test-icon{background:var(--success-soft);color:var(--success)}.test-item.fail .test-icon{background:var(--danger-soft);color:var(--danger)}.test-copy strong{display:block}.test-copy span{display:block;color:var(--muted);font-size:10px;margin-top:2px}.toast{position:fixed;right:18px;bottom:18px;z-index:160;max-width:min(340px,calc(100vw - 28px));padding:10px 12px;border-radius:10px;background:color-mix(in srgb,var(--text) 94%,transparent);color:var(--surface);box-shadow:var(--shadow-md);font-size:11.5px;font-weight:680;opacity:0;transform:translateY(10px);pointer-events:none;transition:180ms}.toast.show{opacity:1;transform:none}
-
     .run-overlay{position:absolute;inset:0;background:color-mix(in srgb,var(--surface) 75%,transparent);backdrop-filter:blur(2px);display:none;place-items:center;z-index:8}.run-overlay.show{display:grid}.spinner{width:34px;height:34px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .75s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.pending{opacity:.68;transition:opacity 120ms}
     .drawer-backdrop{position:fixed;inset:0;background:rgba(2,6,23,.44);z-index:90;display:none}.drawer-backdrop.show{display:block}.drawer{position:fixed;z-index:100;background:var(--surface);box-shadow:var(--shadow-md);transition:transform 220ms ease}.drawer.left{left:0;top:0;bottom:0;width:min(360px,92vw);transform:translateX(-102%)}.drawer.right{right:0;top:0;bottom:0;width:min(340px,92vw);transform:translateX(102%)}.drawer.show{transform:translateX(0)}.drawer-head{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;border-bottom:1px solid var(--border)}.drawer-body{height:calc(100% - 58px);overflow:auto;padding:17px}
     .modal-backdrop{position:fixed;inset:0;z-index:120;background:rgba(2,6,23,.60);display:none;place-items:center;padding:20px}.modal-backdrop.show{display:grid}.modal{width:min(620px,96vw);background:var(--surface);border:1px solid var(--border);border-radius:18px;box-shadow:0 28px 80px rgba(0,0,0,.35);overflow:hidden}.modal-visual{height:150px;background:linear-gradient(135deg,#0f766e,#0f4c5c);position:relative;overflow:hidden}.modal-visual svg{width:100%;height:100%}.modal-content{padding:23px}.modal-content h2{margin:0;font-size:22px;letter-spacing:-.03em}.modal-content p{color:var(--muted);font-size:13px;line-height:1.6}.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:18px}.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
@@ -56,6 +58,56 @@
     @media(max-width:900px){.app-shell{display:block}.sidebar{display:none}.workspace{padding:13px}.mobile-only{display:inline-flex}.hero{align-items:center}.hero-actions .desktop-label{display:none}.result-grid{grid-template-columns:repeat(2,1fr)}.mc-grid{grid-template-columns:1fr}.canvas-wrap{height:390px}.header-actions .status-badge{display:none}}
     @media(max-width:600px){.drawer-body{padding:13px}.play-readout{width:100%;min-width:0;order:3}.hero-actions{flex-wrap:wrap}.run-zone{margin-left:-13px;margin-right:-13px;padding-left:13px;padding-right:13px}.field-help::after{left:auto;right:0;width:min(230px,75vw)}.toast{right:14px;bottom:14px}.app-header{padding:0 12px}.brand-subtitle,.brand-title-row .badge{display:none}.brand-title{font-size:13px}.workspace{padding:10px}.hero{display:block}.hero h1{font-size:20px}.hero-actions{margin-top:12px}.result-grid{grid-template-columns:1fr 1fr;gap:7px}.metric-card{padding:10px}.metric-value{font-size:18px}.canvas-wrap{height:350px}.card-head{padding:13px}.card-head p{display:none}.field-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal-content{padding:18px}.modal-actions{flex-direction:column-reverse}.modal-actions .btn{width:100%}.story-item{grid-template-columns:58px 10px 1fr}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+    /* --- Desktop layout fixes (spacing / overlap) --- */
+    @media(min-width:1241px) and (max-width:1500px){
+      :root{ --sidebar-w:300px; --insights-w:270px; }
+    }
+    .result-grid{ grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+    /* (reverted: scrolling belongs on sidebar-inner/insights-inner themselves,
+       matching the original sticky top-offset calculation) */
+    .run-zone{ padding-top:16px; }
+    .control-section:last-of-type{ margin-bottom:24px; }
+    .run-status:not([hidden]){ margin-bottom:10px; }
+    @media(max-width:1500px){
+      .sidebar .field-grid,.insights .field-grid{ grid-template-columns:1fr; }
+      .sidebar .field.full,.insights .field.full{ grid-column:auto; }
+    }
+    .field label{ flex-wrap:wrap; row-gap:2px; }
+    .field label .unit{ white-space:nowrap; }
+
+    /* Fix: toggle switches picking up inconsistent native browser styling */
+    .switch{
+      appearance:none; -webkit-appearance:none;
+      flex:0 0 40px; box-sizing:border-box;
+      display:inline-block;
+    }
+    .switch::before{ box-sizing:border-box; }
+
+    /* Fix: chart legend labels colliding with the top axis gridline on
+       shorter canvases */
+    .canvas-wrap{ min-height:300px; }
+
+    /* Step-by-step accordion for the sidebar controls */
+    .step-list{ margin-top:14px; display:flex; flex-direction:column; gap:10px; }
+    .step-section{ border:1px solid var(--border); border-radius:11px; overflow:hidden; background:var(--surface); }
+    .step-section > summary{ list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:11px 12px; background:color-mix(in srgb, var(--step-color) 9%, var(--surface)); border-left:4px solid var(--step-color); }
+    .step-section > summary::-webkit-details-marker{ display:none; }
+    .step-section > summary:hover{ background:color-mix(in srgb, var(--step-color) 15%, var(--surface)); }
+    .step-badge{ width:21px; height:21px; border-radius:50%; background:var(--step-color); color:#fff; font-size:10.5px; font-weight:800; display:grid; place-items:center; flex:0 0 auto; }
+    .step-section-title{ display:block; font-size:12px; font-weight:800; color:var(--text); }
+    .step-section-desc{ display:block; font-size:10px; color:var(--muted); margin-top:1px; line-height:1.35; }
+    .step-chevron{ margin-left:auto; flex:0 0 auto; color:var(--muted); transition:transform 150ms; }
+    .step-section[open] > summary .step-chevron{ transform:rotate(180deg); }
+    .step-body{ padding:13px 12px; border-top:1px solid var(--border); }
+
+    /* Fix: mc-grid cards not matching height - the shorter card (comparison
+       table) was sizing to its own content instead of stretching to match
+       the taller card (histogram) beside it. */
+    .mc-grid{ align-items:stretch; }
+    .mc-grid > .card{ height:100%; display:flex; flex-direction:column; margin-top:0; }
+    .mc-grid > .card > div[style*="overflow:auto"]{ flex:1; }
+    .mc-grid > .card .canvas-wrap{ flex:0 0 auto; }
   </style>
 </head>
 <body>
@@ -123,7 +175,6 @@
     </div>
   </div>
   <div class="header-actions">
-    <button class="status-badge self-test-trigger" id="selfTestBadge" type="button" aria-haspopup="dialog" aria-expanded="false" title="Open scientific implementation checks"><span class="status-dot"></span><span id="selfTestText">Checking model</span></button>
     <button class="icon-btn mobile-only" id="openControls" aria-label="Open controls"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M7 12h10M10 18h4"/></svg></button>
     <button class="icon-btn medium-insights mobile-only" id="openInsights" aria-label="Open insights"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 19h16M6 16V9m6 7V5m6 11v-4"/></svg></button>
     <button class="icon-btn" id="helpBtn" aria-label="Open introduction"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="9"/><path d="M9.8 9a2.4 2.4 0 1 1 3.4 2.2c-.8.4-1.2.9-1.2 1.8M12 17h.01"/></svg></button>
@@ -144,6 +195,8 @@
         </div>
       </section>
 
+      <div class="takeaway-line" id="takeawayLine" hidden></div>
+
       <section class="result-grid" aria-label="Key simulation results">
         <article class="metric-card"><div class="metric-label">Hazard events</div><div class="metric-value" id="mEvents">—</div><div class="metric-sub" id="mEventsSub">Run a scenario</div></article>
         <article class="metric-card"><div class="metric-label">Triggered landslides</div><div class="metric-value" id="mSlides">—</div><div class="metric-sub" id="mSlidesSub">Interaction outcome</div></article>
@@ -161,18 +214,19 @@
       <div class="mc-grid">
         <section class="card">
           <div class="card-head"><div><h2>Monte Carlo outcome distribution</h2><p>Distribution across paired simulated catalogues—not the selected realisation above.</p></div><div class="card-actions"><span class="badge" id="runCountBadge">0 paired runs</span></div></div>
-          <div class="canvas-wrap small"><canvas class="chart-canvas" id="mcCanvas" aria-label="Histogram of simulated downtime outcomes"></canvas></div>
+          <div class="mc-stat-row" id="mcStatRow"></div>
+          <div class="canvas-wrap small" id="mcWrap"><canvas class="chart-canvas" id="mcCanvas" aria-label="Histogram of simulated downtime outcomes"></canvas><div class="chart-tooltip" id="mcTooltip"></div></div>
           <div class="chart-summary" id="mcSummary" aria-live="polite">Run the simulator to calculate an accessible summary of the downtime distribution.</div>
           <div class="legend"><span class="legend-item"><i class="legend-line" style="background:var(--danger)"></i>Baseline</span><span class="legend-item"><i class="legend-line" style="background:var(--accent)"></i>With measures</span></div>
         </section>
         <section class="card">
-          <div class="card-head"><div><h2>Monte Carlo mean comparison</h2><p id="mcCompareSub">Statistics across all simulated catalogues—not the selected realisation.</p></div></div>
+          <div class="card-head"><div><h2>Monte Carlo mean comparison</h2><p id="mcCompareSub">Averaged across all runs — same caveat as the chart on the left.</p></div></div>
           <div style="overflow:auto"><table class="compare-table"><thead><tr><th>Indicator</th><th>Baseline</th><th>Measures</th><th>Change</th></tr></thead><tbody id="compareBody"><tr><td colspan="4" style="text-align:center;color:var(--muted);padding:36px">Run the simulator to populate the comparison.</td></tr></tbody></table></div>
         </section>
       </div>
 
       <section class="card">
-        <div class="card-head"><div><h2>Sequence narrative</h2><p>A plain-language explanation of the selected realisation.</p></div><div class="card-actions"><button class="btn btn-ghost" id="downloadCsvBtn">CSV</button><button class="btn btn-ghost" id="downloadJsonBtn">JSON</button></div></div>
+        <div class="card-head"><div><h2>Sequence narrative</h2><p>Full chronological log — every event in this run, in order.</p></div><div class="card-actions"><button class="btn btn-ghost" id="downloadCsvBtn">CSV</button><button class="btn btn-ghost" id="downloadJsonBtn">JSON</button></div></div>
         <div class="story-list" id="storyList"><div class="empty-state">Run a scenario to generate an event-by-event narrative.</div></div>
       </section>
     </div>
@@ -218,7 +272,7 @@ const defaults={
   strengthen:0.28, stabilize:0.38, fasterRecovery:0.35
 };
 let settings={...defaults};
-let state={catalog:[],baseline:null,mitigated:null,mc:null,selectedEvent:0,playhead:0,playing:false,playbackActive:false,playbackEvent:-1,playbackPulseUntil:0,storyIndices:[],raf:0,valid:true,selfTests:null,activePreset:'custom',stale:false,validationErrors:{}};
+let state={catalog:[],baseline:null,mitigated:null,mc:null,selectedEvent:0,playhead:0,playing:false,playbackActive:false,playbackEvent:-1,playbackPulseUntil:0,storyIndices:[],raf:0,valid:true,selfTests:null,activePreset:'custom',stale:false,validationErrors:{},openSteps:{main:{},drawer:{}},hoverEvent:null};
 
 const fieldHelp={
   horizonDays:'Length of the simulated period. Longer horizons increase the chance of multiple independent events.',
@@ -254,49 +308,54 @@ const fieldHelp={
   fasterRecovery:'Shortens the recovery time in the resilience case.'
 };
 
+function stepSection(scope,key,num,color,title,desc,bodyHtml,advancedKeys,advancedLabel,advancedHtml,defaultOpen){
+  const openAttr=(state.openSteps[scope]&&state.openSteps[scope][key]!==undefined?state.openSteps[scope][key]:defaultOpen)?' open':'';
+  return `<details class="step-section" style="--step-color:var(${color})" data-step="${key}" data-scope="${scope}"${openAttr}>
+    <summary><span class="step-badge">${num}</span><span><span class="step-section-title">${title}</span><span class="step-section-desc">${desc}</span></span><svg class="step-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></summary>
+    <div class="step-body">
+      <div class="field-grid">${bodyHtml}</div>
+      ${advancedHtml?`<details class="advanced topic-advanced" data-advanced-keys="${advancedKeys}"><summary><span>Advanced<span class="advanced-caption">${advancedLabel}</span></span></summary><div class="advanced-content"><div class="field-grid">${advancedHtml}</div></div></details>`:''}
+    </div>
+  </details>`;
+}
 function controlsMarkup(scope='main'){return `
-  <section class="control-section"><div class="section-heading"><div><div class="section-kicker">Start here</div><h2 class="section-title">Choose a scenario</h2><p class="section-description">Start with the essentials, then open Advanced only for the topic you want to tune.</p></div></div>
+  <section class="control-section"><div class="section-heading"><div><div class="section-kicker">Start here</div><h2 class="section-title">Choose a scenario</h2><p class="section-description">Pick a preset, or step through each topic below in order.</p></div></div>
     <div class="simple-setup">
       <div class="field full"><label for="${scope}-scenarioPreset"><span class="label-main">Scenario preset</span></label><select class="select" id="${scope}-scenarioPreset" data-action="scenario-preset"><option value="custom" ${state.activePreset==='custom'?'selected':''}>Custom</option><option value="cascade" ${state.activePreset==='cascade'?'selected':''}>Earthquake–rain cascade</option><option value="aftershock" ${state.activePreset==='aftershock'?'selected':''}>Aftershock interruption</option><option value="rain" ${state.activePreset==='rain'?'selected':''}>Rain-dominated slope</option><option value="resilient" ${state.activePreset==='resilient'?'selected':''}>Resilient asset</option></select><div class="preset-note" data-preset-note>Editing any preset parameter switches this selection to Custom.</div></div>
       <div class="toggle-row"><div class="toggle-copy"><strong>Include aftershocks</strong><span>Clustered earthquakes after each mainshock.</span></div><button class="switch ${settings.aftershocks?'on':''}" data-action="aftershocks-toggle" role="switch" aria-checked="${settings.aftershocks}" aria-label="Include aftershocks"></button></div>
       <div class="toggle-row"><div class="toggle-copy"><strong>Include heavy rainfall</strong><span>Independent storms that can interact with weakened slopes.</span></div><button class="switch ${settings.rainfall?'on':''}" data-action="rainfall-toggle" role="switch" aria-checked="${settings.rainfall}" aria-label="Include heavy rainfall"></button></div>
-      <div class="index-explainer"><strong>Disruption index: a relative screening scale</strong>0% means no modelled impairment and 100% means complete modelled impairment. It is not a physical damage ratio, loss estimate or probability.</div>
+      <div class="index-explainer"><strong>Disruption index: a relative screening scale</strong>0–100%, where 100% is complete modelled impairment. See the intro for what it isn't measuring.</div>
     </div>
 
-    <div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Simulation setup</h3><p class="topic-description">Choose how far ahead to simulate and how many paired catalogues to compare.</p></div></div>
-      <div class="field-grid">${numberField(scope,'horizonDays','Time horizon','days',30,3650,1)}${numberField(scope,'runs','Monte Carlo runs','',50,2000,50)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="seed"><summary><span>Advanced<span class="advanced-caption">Repeatability control</span></span></summary><div class="advanced-content"><div class="field-grid">${numberFieldFull(scope,'seed','Random seed','',1,999999,1)}</div></div></details>
-    </div>
+    <div class="step-list">
+      ${stepSection(scope,'setup',1,'--accent','Simulation setup','How far ahead to simulate, and how many catalogues to compare.',
+        `${numberField(scope,'horizonDays','Time horizon','days',30,3650,1)}${numberField(scope,'runs','Monte Carlo runs','',50,2000,50)}`,
+        'seed','Repeatability control',numberFieldFull(scope,'seed','Random seed','',1,999999,1),true)}
 
-    <div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Earthquakes</h3><p class="topic-description">Set the background occurrence rate and the upper magnitude bound.</p></div></div>
-      <div class="field-grid">${numberField(scope,'mainshockRate','Annual event rate','events/year',0,20,.1)}${numberField(scope,'mMax','Maximum magnitude','Mw',4,9.5,.1)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="bValue,mMin,siteDistance,siteExposure"><summary><span>Advanced<span class="advanced-caption">Magnitude distribution and site sensitivity</span></span></summary><div class="advanced-content"><div class="field-grid">${numberField(scope,'bValue','G–R b-value','',.4,2,.05)}${numberField(scope,'mMin','Minimum magnitude','Mw',3,8,.1)}${numberField(scope,'siteDistance','Representative distance','km',1,300,1)}${rangeField(scope,'siteExposure','Site shaking sensitivity',0,1,.01)}</div></div></details>
-    </div>
+      ${stepSection(scope,'earthquakes',2,'--quake','Earthquakes','Background occurrence rate and the upper magnitude bound.',
+        `${numberField(scope,'mainshockRate','Annual event rate','events/year',0,20,.1)}${numberField(scope,'mMax','Maximum magnitude','Mw',4,9.5,.1)}`,
+        'bValue,mMin,siteDistance,siteExposure','Magnitude distribution and site sensitivity',
+        `${numberField(scope,'bValue','G–R b-value','',.4,2,.05)}${numberField(scope,'mMin','Minimum magnitude','Mw',3,8,.1)}${numberField(scope,'siteDistance','Representative distance','km',1,300,1)}${rangeField(scope,'siteExposure','Site shaking sensitivity',0,1,.01)}`,false)}
 
-    ${settings.aftershocks?`<div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Aftershocks</h3><p class="topic-description">Control the expected sequence size after a magnitude 6 mainshock.</p></div></div>
-      <div class="field-grid">${numberFieldFull(scope,'asBaseCount','Expected count at Mw 6','',0,300,1)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="asWindow,asAlpha,asMMin,omoriC,omoriP,asB"><summary><span>Advanced<span class="advanced-caption">Omori timing, productivity and magnitudes</span></span></summary><div class="advanced-content"><div class="field-grid">${numberField(scope,'asWindow','Sequence window','days',1,730,1)}${numberField(scope,'asAlpha','Productivity exponent α','',0,2,.05)}${numberField(scope,'asMMin','Minimum aftershock','Mw',1,6,.1)}${numberField(scope,'omoriC','Omori c','days',.001,10,.01)}${numberField(scope,'omoriP','Omori p','',.5,2,.01)}${numberField(scope,'asB','Aftershock b-value','',.4,2,.05)}</div></div></details>
-    </div>`:''}
+      ${settings.aftershocks?stepSection(scope,'aftershocks',3,'--after','Aftershocks','Expected sequence size after a magnitude 6 mainshock.',
+        numberFieldFull(scope,'asBaseCount','Expected count at Mw 6','',0,300,1),
+        'asWindow,asAlpha,asMMin,omoriC,omoriP,asB','Omori timing, productivity and magnitudes',
+        `${numberField(scope,'asWindow','Sequence window','days',1,730,1)}${numberField(scope,'asAlpha','Productivity exponent α','',0,2,.05)}${numberField(scope,'asMMin','Minimum aftershock','Mw',1,6,.1)}${numberField(scope,'omoriC','Omori c','days',.001,10,.01)}${numberField(scope,'omoriP','Omori p','',.5,2,.01)}${numberField(scope,'asB','Aftershock b-value','',.4,2,.05)}`,false):''}
 
-    <div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Rain and slopes</h3><p class="topic-description">Set storm frequency when enabled and the underlying slope susceptibility.</p></div></div>
-      <div class="field-grid">${settings.rainfall?numberField(scope,'rainRate','Heavy-rain rate','events/year',0,100,1):''}${rangeField(scope,'slope','Slope susceptibility',0,1,.01)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="rainMedian,rainThreshold,rainDispersion,landslideExposure,eqWeakening,weakeningHalfLife"><summary><span>Advanced<span class="advanced-caption">Rain intensity, exposure and transient weakening</span></span></summary><div class="advanced-content"><div class="field-grid">${settings.rainfall?`${numberField(scope,'rainMedian','Median intensity','mm/day',1,500,1)}${numberField(scope,'rainThreshold','Slope trigger reference','mm/day',1,500,1)}${numberField(scope,'rainDispersion','Rain log dispersion','',.05,1.5,.05)}`:''}${rangeField(scope,'landslideExposure','Asset landslide exposure',0,1,.01)}${rangeField(scope,'eqWeakening','Earthquake weakening',0,1,.01)}${numberFieldFull(scope,'weakeningHalfLife','Weakening half-life','days',1,1000,1)}</div></div></details>
-    </div>
+      ${stepSection(scope,'rain',4,'--rain','Rain and slopes','Storm frequency (when enabled) and slope susceptibility.',
+        `${settings.rainfall?numberField(scope,'rainRate','Heavy-rain rate','events/year',0,100,1):''}${rangeField(scope,'slope','Slope susceptibility',0,1,.01)}`,
+        'rainMedian,rainThreshold,rainDispersion,landslideExposure,eqWeakening,weakeningHalfLife','Rain intensity, exposure and transient weakening',
+        `${settings.rainfall?`${numberField(scope,'rainMedian','Median intensity','mm/day',1,500,1)}${numberField(scope,'rainThreshold','Slope trigger reference','mm/day',1,500,1)}${numberField(scope,'rainDispersion','Rain log dispersion','',.05,1.5,.05)}`:''}${rangeField(scope,'landslideExposure','Asset landslide exposure',0,1,.01)}${rangeField(scope,'eqWeakening','Earthquake weakening',0,1,.01)}${numberFieldFull(scope,'weakeningHalfLife','Weakening half-life','days',1,1000,1)}`,false)}
 
-    <div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Asset and recovery</h3><p class="topic-description">Describe how readily the asset is disrupted and how quickly it recovers.</p></div></div>
-      <div class="field-grid">${rangeField(scope,'vulnerability','Asset vulnerability',0,1,.01)}${numberFieldFull(scope,'recoveryDays','Nominal recovery period','days',1,2000,1)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="disruptionThreshold,damageInteraction"><summary><span>Advanced<span class="advanced-caption">Downtime definition and interaction memory</span></span></summary><div class="advanced-content"><div class="field-grid">${rangeField(scope,'disruptionThreshold','Downtime threshold',.05,.8,.01)}${rangeField(scope,'damageInteraction','Damage amplification',0,2,.01)}</div></div></details>
-    </div>
+      ${stepSection(scope,'asset',5,'--accent','Asset and recovery','How readily the asset is disrupted, and how quickly it recovers.',
+        `${rangeField(scope,'vulnerability','Asset vulnerability',0,1,.01)}${numberFieldFull(scope,'recoveryDays','Nominal recovery period','days',1,2000,1)}`,
+        'disruptionThreshold,damageInteraction','Downtime definition and interaction memory',
+        `${rangeField(scope,'disruptionThreshold','Downtime threshold',.05,.8,.01)}${rangeField(scope,'damageInteraction','Damage amplification',0,2,.01)}`,false)}
 
-    <div class="topic-section">
-      <div class="topic-head"><div><h3 class="topic-title">Resilience measures</h3><p class="topic-description">Compare the same catalogue with structural and slope interventions.</p></div></div>
-      <div class="field-grid">${rangeField(scope,'strengthen','Seismic strengthening',0,.8,.01)}${rangeField(scope,'stabilize','Slope stabilisation',0,.8,.01)}</div>
-      <details class="advanced topic-advanced" data-advanced-keys="fasterRecovery"><summary><span>Advanced<span class="advanced-caption">Recovery acceleration</span></span></summary><div class="advanced-content"><div class="field-grid">${rangeField(scope,'fasterRecovery','Recovery acceleration',0,.8,.01)}</div></div></details>
+      ${stepSection(scope,'resilience',6,'--accent','Resilience measures','Compare the same catalogue with structural and slope interventions.',
+        `${rangeField(scope,'strengthen','Seismic strengthening',0,.8,.01)}${rangeField(scope,'stabilize','Slope stabilisation',0,.8,.01)}`,
+        'fasterRecovery','Recovery acceleration',
+        rangeField(scope,'fasterRecovery','Recovery acceleration',0,.8,.01),false)}
     </div>
   </section>
   <div class="run-zone">
@@ -305,6 +364,7 @@ function controlsMarkup(scope='main'){return `
     <button class="btn btn-primary" style="width:100%" data-run>Run simulation</button>
     <div class="run-helper">One selected realisation + paired Monte Carlo comparison</div>
   </div>`}
+
 function numberFieldFull(scope,id,label,unit,min,max,step){return numberField(scope,id,label,unit,min,max,step).replace('class="field"','class="field full"')}
 function helpButton(id){const text=fieldHelp[id];return text?`<span class="field-help" role="button" tabindex="0" aria-label="Help for ${id}: ${text}" data-tooltip="${text.replace(/&/g,'&amp;').replace(/"/g,'&quot;')}">?</span>`:''}
 function numberField(scope,id,label,unit,min,max,step){const uid=`${scope}-${id}`;return `<div class="field" data-field-key="${id}"><label for="${uid}"><span class="label-main"><span>${label}</span>${helpButton(id)}</span><span class="unit">${unit}</span></label><input class="input setting-input" type="number" id="${uid}" data-key="${id}" value="${settings[id]}" min="${min}" max="${max}" step="${step}"><div class="error-text" data-error-key="${id}" hidden></div></div>`}
@@ -315,9 +375,9 @@ function insightsMarkup(){return `
   <div style="height:14px"></div>
   <div class="insight-card"><h3>Sequence severity index</h3><div class="insight-value severity-value">—</div><div class="risk-meter"><span class="severity-meter" style="width:0%"></span></div><p class="severity-text">Run the model to assess event clustering and disruption.</p></div>
   <div class="insight-card"><h3>Event mix</h3><div class="event-chips event-chips-target"><span class="chip">No sequence yet</span></div></div>
-  <div class="insight-card"><h3>What drove the outcome?</h3><div class="narrative driver-narrative">The simulator will identify the dominant event, whether recovery was interrupted, and how transient slope weakening affected landslide triggering.</div></div>
+  <div class="insight-card"><h3>Summary: what drove it</h3><div class="narrative driver-narrative">The simulator will identify the dominant event, whether recovery was interrupted, and how transient slope weakening affected landslide triggering.</div></div>
   <div class="insight-card"><h3>Model trust</h3><button class="status-badge side-test-badge self-test-trigger" type="button" aria-haspopup="dialog" aria-expanded="false"><span class="status-dot"></span><span class="side-test-text">Scientific checks pending</span></button><p>Open the badge to see exactly what is tested. Passing checks confirm implementation consistency, not site validation.</p></div>
-  <details class="advanced" open><summary>Scientific basis and limits</summary><div class="advanced-content">
+  <details class="advanced"><summary>Scientific basis and limits</summary><div class="advanced-content">
     <ul class="method-list">
       <li>Background earthquake and rain arrivals use homogeneous Poisson processes.</li>
       <li>Magnitudes follow a bounded Gutenberg–Richter distribution.</li>
@@ -344,6 +404,7 @@ function bindControlPanel(root){
   const as=root.querySelector('[data-action="aftershocks-toggle"]');if(as)as.addEventListener('click',()=>{settings.aftershocks=!settings.aftershocks;setPresetCustom(true);mountPanels();validateSettings();markPending()});
   const rain=root.querySelector('[data-action="rainfall-toggle"]');if(rain)rain.addEventListener('click',()=>{settings.rainfall=!settings.rainfall;setPresetCustom(true);mountPanels();validateSettings();markPending()});
   const preset=root.querySelector('[data-action="scenario-preset"]');if(preset)preset.addEventListener('change',e=>applyPreset(e.target.value));
+  root.querySelectorAll('.step-section').forEach(el=>el.addEventListener('toggle',()=>{const scope=el.dataset.scope,key=el.dataset.step;if(!state.openSteps[scope])state.openSteps[scope]={};state.openSteps[scope][key]=el.open}));
 }
 function bindSelfTestTriggers(){document.querySelectorAll('.self-test-trigger').forEach(btn=>{btn.onclick=showSelfTests})}
 function syncSettings(key){document.querySelectorAll(`[data-key="${key}"]`).forEach(el=>{if(Number(el.value)!==settings[key])el.value=settings[key]});document.querySelectorAll(`[data-value-key="${key}"]`).forEach(el=>el.textContent=Math.round(settings[key]*100)+'%');document.querySelectorAll(`[data-label-key="${key}"]`).forEach(el=>el.textContent=Math.round(settings[key]*100)+'%')}
@@ -417,11 +478,11 @@ function evaluateCatalog(catalog,withMeasures=false){
   let damage=0,weakening=0,last=0,maxDamage=0,downtime=0,slides=0,interruptions=0,cumulativeBurden=0;const results=[],snapshots=[{time:0,damage:0}],threshold=settings.disruptionThreshold;
   function advance(to){const dt=Math.max(0,to-last);if(damage>threshold){const cross=tau*Math.log(damage/threshold);downtime+=Math.min(dt,Math.max(0,cross))}damage*=Math.exp(-dt/tau);weakening*=Math.exp(-dt/weakTau);last=to}
   function applyDamage(increment){increment=clamp(increment,0,.98);const before=damage;damage=1-(1-damage)*(1-increment);maxDamage=Math.max(maxDamage,damage);return before}
-  function addSlide(baseEvent,prob,severity,cause){if(baseEvent.landslideU>=prob)return null;slides++;const lsSeverity=clamp(severity,0,1),before=damage,inc=settings.landslideExposure*(.08+.62*Math.pow(lsSeverity,1.35))*(1+.65*damage);if(countsAsInterruption(before,inc,threshold))interruptions++;applyDamage(inc);cumulativeBurden+=lsSeverity;const ev={id:`L-${baseEvent.id}`,type:'landslide',time:baseEvent.time,trigger:cause,severity:lsSeverity,probability:prob,damageBefore:before,damageAfter:damage};results.push(ev);snapshots.push({time:ev.time,damage});return ev}
+  function addSlide(baseEvent,prob,severity,cause){if(baseEvent.landslideU>=prob)return null;slides++;const lsSeverity=clamp(severity,0,1),before=damage,inc=settings.landslideExposure*(.08+.62*Math.pow(lsSeverity,1.35))*(1+.65*damage);const wasInterruption=countsAsInterruption(before,inc,threshold);if(wasInterruption)interruptions++;applyDamage(inc);cumulativeBurden+=lsSeverity;const ev={id:`L-${baseEvent.id}`,type:'landslide',time:baseEvent.time,trigger:cause,severity:lsSeverity,probability:prob,damageBefore:before,damageAfter:damage,interrupted:wasInterruption};results.push(ev);snapshots.push({time:ev.time,damage});return ev}
   for(const ev of catalog){advance(ev.time);const before=damage;if(ev.type==='mainshock'||ev.type==='aftershock'){
-      const isAfter=ev.type==='aftershock',base=settings.vulnerability*(.035+.64*Math.pow(ev.severity,1.65))*(isAfter?.88:1),inc=base*(1+settings.damageInteraction*damage)*(1-strengthen);if(countsAsInterruption(before,inc,threshold))interruptions++;applyDamage(inc);weakening=clamp(weakening+settings.eqWeakening*ev.severity,0,1.5);cumulativeBurden+=ev.severity;
+      const isAfter=ev.type==='aftershock',base=settings.vulnerability*(.035+.64*Math.pow(ev.severity,1.65))*(isAfter?.88:1),inc=base*(1+settings.damageInteraction*damage)*(1-strengthen);const wasInterruption=countsAsInterruption(before,inc,threshold);if(wasInterruption)interruptions++;applyDamage(inc);weakening=clamp(weakening+settings.eqWeakening*ev.severity,0,1.5);cumulativeBurden+=ev.severity;
       const slopeEff=settings.slope*(1-stabilize),pSlide=sigmoid(-5.1+3.1*slopeEff+4.8*ev.severity+2.0*weakening),slideSeverity=clamp(.28+.38*ev.severity+.28*slopeEff+.18*weakening,0,1);
-      results.push({...ev,damageBefore:before,damageAfter:damage,weakening,landslideProbability:pSlide});snapshots.push({time:ev.time,damage});addSlide(ev,pSlide,slideSeverity,'earthquake shaking');
+      results.push({...ev,damageBefore:before,damageAfter:damage,weakening,landslideProbability:pSlide,interrupted:wasInterruption});snapshots.push({time:ev.time,damage});addSlide(ev,pSlide,slideSeverity,'earthquake shaking');
     }else if(ev.type==='rain'){
       const ratio=ev.intensity/settings.rainThreshold,slopeEff=settings.slope*(1-stabilize),pSlide=sigmoid(-4.4+3.0*slopeEff+2.55*(ratio-1)+3.05*weakening),slideSeverity=clamp(.18+.32*clamp(ratio/2,0,1)+.30*slopeEff+.28*weakening,0,1);results.push({...ev,damageBefore:damage,damageAfter:damage,weakening,landslideProbability:pSlide});addSlide(ev,pSlide,slideSeverity,'heavy rainfall');
     }}
@@ -444,42 +505,158 @@ async function runMonteCarlo(){
   state.mc={base,mit,summary:summarizeMC(base,mit)};$('runCountBadge').textContent=`${settings.runs} paired runs`;
 }
 function summarizeMC(base,mit){const metric=(arr,key)=>arr.map(x=>x[key]);const mean=a=>a.reduce((s,x)=>s+x,0)/Math.max(1,a.length),quant=(a,q)=>{const s=[...a].sort((x,y)=>x-y);return s[Math.min(s.length-1,Math.floor(q*(s.length-1)))]||0},prob=(a,fn)=>a.filter(fn).length/Math.max(1,a.length);return{
-  downtimeB:mean(metric(base,'downtime')),downtimeM:mean(metric(mit,'downtime')),p90B:quant(metric(base,'downtime'),.9),p90M:quant(metric(mit,'downtime'),.9),damageB:mean(metric(base,'maxDamage')),damageM:mean(metric(mit,'maxDamage')),
+  downtimeB:mean(metric(base,'downtime')),downtimeM:mean(metric(mit,'downtime')),p50B:quant(metric(base,'downtime'),.5),p50M:quant(metric(mit,'downtime'),.5),p90B:quant(metric(base,'downtime'),.9),p90M:quant(metric(mit,'downtime'),.9),damageB:mean(metric(base,'maxDamage')),damageM:mean(metric(mit,'maxDamage')),
   slideB:prob(base,x=>x.slides>0),slideM:prob(mit,x=>x.slides>0),severeB:prob(base,x=>x.maxDamage>.5),severeM:prob(mit,x=>x.maxDamage>.5),interruptB:prob(base,x=>x.interruptions>0),interruptM:prob(mit,x=>x.interruptions>0)
 }}
 
 function renderAll(){renderMetrics();drawTimeline();drawMCHistogram();renderComparison();renderStory();renderInsights()}
-function renderMetrics(){const b=state.baseline,m=state.mitigated;if(!b)return;$('mEvents').textContent=fmt(b.hazardCount,0);$('mEventsSub').textContent=`${countType(b.events,'mainshock')} mainshock · ${countType(b.events,'aftershock')} aftershock · ${countType(b.events,'rain')} rain`;$('mSlides').textContent=fmt(b.slides,0);$('mSlidesSub').textContent=b.slides?`${countSlidesByTrigger(b.events,'rain')} rain-triggered · ${countSlidesByTrigger(b.events,'earthquake')} shaking-triggered`:'No landslide triggered';$('mDamage').textContent=fmt(100*b.maxDamage,0)+'%';$('mDamageSub').textContent=b.maxDamage>.5?'High screening disruption':'Below high-disruption threshold';$('mDowntime').textContent=fmt(b.downtime,1)+' d';$('mDowntimeSub').textContent=`${b.interruptions} recovery interruption${b.interruptions===1?'':'s'}`;const benefit=b.downtime>0?(b.downtime-m.downtime)/b.downtime:0;$('mBenefit').textContent=fmt(100*Math.max(0,benefit),0)+'%';$('mBenefitSub').textContent=`This run: ${fmt(b.downtime,1)} d → ${fmt(m.downtime,1)} d · ${fmt(b.downtime-m.downtime,1)} fewer`}
+function renderMetrics(){const b=state.baseline,m=state.mitigated;if(!b)return;$('mEvents').textContent=fmt(b.hazardCount,0);$('mEventsSub').textContent=`${countType(b.events,'mainshock')} mainshock · ${countType(b.events,'aftershock')} aftershock · ${countType(b.events,'rain')} rain`;$('mSlides').textContent=fmt(b.slides,0);$('mSlidesSub').textContent=b.slides?`${countSlidesByTrigger(b.events,'rain')} rain-triggered · ${countSlidesByTrigger(b.events,'earthquake')} shaking-triggered`:'No landslide triggered';$('mDamage').textContent=fmt(100*b.maxDamage,0)+'%';$('mDamageSub').textContent=b.maxDamage>.5?'High screening disruption':'Below high-disruption threshold';$('mDowntime').textContent=fmt(b.downtime,1)+' d';$('mDowntimeSub').textContent=`${b.interruptions} recovery interruption${b.interruptions===1?'':'s'}`;const benefit=b.downtime>0?(b.downtime-m.downtime)/b.downtime:0;$('mBenefit').textContent=fmt(100*Math.max(0,benefit),0)+'%';$('mBenefitSub').textContent=`This run: ${fmt(b.downtime,1)} d → ${fmt(m.downtime,1)} d · ${fmt(b.downtime-m.downtime,1)} fewer`;renderTakeaway(b,m)}
+function renderTakeaway(b,m){const el=$('takeawayLine');if(!el)return;if(!b){el.hidden=true;return}
+  const benefitPct=b.downtime>0?Math.round(100*Math.max(0,(b.downtime-m.downtime)/b.downtime)):0;
+  const slideText=b.slides?`<strong>${b.slides} landslide${b.slides===1?'':'s'}</strong>`:'no landslides';
+  let sentence;
+  if(b.hazardCount===0){sentence=`No hazard events occurred in this run — the asset stayed fully operational throughout.`}
+  else if(b.downtime<0.5){sentence=`This run produced ${b.hazardCount} event${b.hazardCount===1?'':'s'} and ${slideText}, but disruption never crossed the downtime threshold — no meaningful downtime resulted.`}
+  else{sentence=`This scenario caused ${slideText} and <strong>${fmt(b.downtime,0)} day${Math.round(b.downtime)===1?'':'s'}</strong> of downtime${benefitPct>0?` — resilience measures would cut that by about <strong>${benefitPct}%</strong>.`:'.'}`}
+  el.innerHTML=`<span class="takeaway-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0-2.6 11.4c.4.2.6.6.6 1v.6h4v-.6c0-.4.2-.8.6-1A6 6 0 0 0 12 3Z"/><path d="M10 19h4M11 22h2"/></svg></span><span>${sentence}</span>`;
+  el.hidden=false;
+}
 function countType(events,type){return events.filter(e=>e.type===type).length}function countSlidesByTrigger(events,kind){return events.filter(e=>e.type==='landslide'&&e.trigger.includes(kind==='rain'?'rain':'earthquake')).length}
 
-const chart={pad:{l:58,r:22,t:76,b:42},eventYs:{mainshock:25,aftershock:39,rain:53,landslide:67},hover:null};
+const chart={
+  pad:{l:58,r:22,t:150,b:42},
+  headerH:112,
+  lanes:{mainshock:{y0:26,y1:47},aftershock:{y0:47,y1:68},rain:{y0:68,y1:89},landslide:{y0:89,y1:110}},
+  eventYs:{mainshock:36,aftershock:57,rain:78,landslide:99},
+  hover:null
+};
 function fitCanvas(canvas){const rect=canvas.getBoundingClientRect(),dpr=Math.min(2,window.devicePixelRatio||1);canvas.width=Math.max(1,Math.round(rect.width*dpr));canvas.height=Math.max(1,Math.round(rect.height*dpr));const ctx=canvas.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);return{ctx,w:rect.width,h:rect.height,dpr}}
 function css(name){return getComputedStyle(document.documentElement).getPropertyValue(name).trim()}
-function drawTimeline(exportCanvas=null){const canvas=exportCanvas||$('timelineCanvas'),{ctx,w,h}=fitCanvas(canvas);ctx.clearRect(0,0,w,h);drawChartBackground(ctx,w,h);if(!state.baseline){drawEmpty(ctx,w,h,'Run a scenario to create the sequence timeline.');return}const p=chart.pad,plot={x:p.l,y:p.t,w:w-p.l-p.r,h:h-p.t-p.b},reveal=!exportCanvas&&state.playbackActive?state.playhead:null;
+function drawTimeline(exportCanvas=null){const canvas=exportCanvas||$('timelineCanvas'),{ctx,w,h}=fitCanvas(canvas);ctx.clearRect(0,0,w,h);const p=chart.pad,plot={x:p.l,y:p.t,w:w-p.l-p.r,h:h-p.t-p.b};drawChartBackground(ctx,w,h,plot.x);if(!state.baseline){drawEmpty(ctx,w,h,'Run a scenario to create the sequence timeline.');return}const reveal=!exportCanvas&&state.playbackActive?state.playhead:null;
   drawAxes(ctx,plot,w,h);drawSeries(ctx,state.baseline.series,plot,css('--danger'),2.2,reveal);drawSeries(ctx,state.mitigated.series,plot,css('--accent'),2.2,reveal);
   const activeIndex=!exportCanvas&&state.playbackActive?eventIndexAtTime(state.playhead):-1,now=performance.now(),pulse=1.5+1.5*(.5+.5*Math.sin(now/115));
-  state.baseline.events.forEach((ev,i)=>{const x=plot.x+ev.time/settings.horizonDays*plot.w,y=chart.eventYs[ev.type]||25,passed=reveal==null||ev.time<=reveal;ctx.save();ctx.globalAlpha=passed?1:.16;ctx.beginPath();ctx.fillStyle=eventColor(ev.type);ctx.arc(x,y,ev.type==='mainshock'?5:3.6,0,Math.PI*2);ctx.fill();ctx.restore();if(i===activeIndex){if(now<state.playbackPulseUntil){ctx.beginPath();ctx.strokeStyle=eventColor(ev.type);ctx.globalAlpha=.28;ctx.lineWidth=3;ctx.arc(x,y,8+pulse,0,Math.PI*2);ctx.stroke();ctx.globalAlpha=1;}ctx.beginPath();ctx.strokeStyle=css('--text');ctx.lineWidth=1.6;ctx.arc(x,y,8,0,Math.PI*2);ctx.stroke()}else if(i===state.selectedEvent&&!state.playing){ctx.beginPath();ctx.strokeStyle=css('--text');ctx.lineWidth=1.5;ctx.arc(x,y,8,0,Math.PI*2);ctx.stroke()}});
+  const highlightIdx=activeIndex>=0?activeIndex:(!state.playing?state.selectedEvent:-1);
+  if(highlightIdx>=0&&state.baseline.events[highlightIdx]){const hEv=state.baseline.events[highlightIdx],hx=plot.x+hEv.time/settings.horizonDays*plot.w;drawLaneHighlight(ctx,w,hEv.type,hx);}
+  const EVENT_SQ=13;
+  state.baseline.events.forEach((ev,i)=>{const x=plot.x+ev.time/settings.horizonDays*plot.w,y=chart.eventYs[ev.type]||25,passed=reveal==null||ev.time<=reveal;const sq=EVENT_SQ;ctx.save();ctx.globalAlpha=passed?1:.16;ctx.fillStyle=eventColor(ev.type);ctx.fillRect(x-sq/2,y-sq/2,sq,sq);ctx.strokeStyle='rgba(0,0,0,.22)';ctx.lineWidth=1;ctx.strokeRect(x-sq/2+.5,y-sq/2+.5,sq-1,sq-1);ctx.restore();if(i===activeIndex){if(now<state.playbackPulseUntil){const ps=sq+2+pulse*2;ctx.strokeStyle=eventColor(ev.type);ctx.globalAlpha=.28;ctx.lineWidth=3;ctx.strokeRect(x-ps/2,y-ps/2,ps,ps);ctx.globalAlpha=1;}const hs=sq+6;ctx.strokeStyle=css('--text');ctx.lineWidth=1.6;ctx.strokeRect(x-hs/2,y-hs/2,hs,hs)}else if(i===state.selectedEvent&&!state.playing){const hs=sq+6;ctx.strokeStyle=css('--text');ctx.lineWidth=1.5;ctx.strokeRect(x-hs/2,y-hs/2,hs,hs)}});
   if(state.playbackActive){const x=plot.x+state.playhead/settings.horizonDays*plot.w;ctx.strokeStyle=css('--muted');ctx.setLineDash([4,4]);ctx.beginPath();ctx.moveTo(x,8);ctx.lineTo(x,plot.y+plot.h);ctx.stroke();ctx.setLineDash([])}
 }
-function drawChartBackground(ctx,w,h){ctx.fillStyle=css('--surface');ctx.fillRect(0,0,w,h);ctx.fillStyle=css('--surface-soft');ctx.fillRect(0,0,w,76);ctx.strokeStyle=css('--border');ctx.beginPath();ctx.moveTo(0,76);ctx.lineTo(w,76);ctx.stroke()}
+function drawChartBackground(ctx,w,h,plotX){
+  ctx.fillStyle=css('--surface');ctx.fillRect(0,0,w,h);
+  const headerH=chart.headerH;
+  ctx.fillStyle=css('--surface-soft');ctx.fillRect(0,0,w,headerH);
+  ctx.fillStyle=css('--muted');ctx.font='700 9.5px Inter, sans-serif';ctx.textAlign='left';
+  ctx.fillText('EVENT TIMELINE',10,14);
+  const order=['mainshock','aftershock','rain','landslide'];
+  order.forEach((t,i)=>{
+    const lane=chart.lanes[t];
+    if(i%2===1){ctx.fillStyle=css('--surface');ctx.fillRect(0,lane.y0,w,lane.y1-lane.y0);}
+    ctx.fillStyle=eventColor(t);ctx.globalAlpha=.9;ctx.fillRect(0,lane.y0,3,lane.y1-lane.y0);ctx.globalAlpha=1;
+    ctx.fillStyle=eventColor(t);ctx.font='600 10px Inter, sans-serif';
+    ctx.fillText(labelType(t),10,(lane.y0+lane.y1)/2+3);
+    if(i>0){ctx.strokeStyle=css('--border');ctx.globalAlpha=.6;ctx.beginPath();ctx.moveTo(0,lane.y0);ctx.lineTo(w,lane.y0);ctx.stroke();ctx.globalAlpha=1;}
+  });
+  if(plotX){ctx.strokeStyle=css('--border');ctx.globalAlpha=.7;ctx.beginPath();ctx.moveTo(plotX-8,0);ctx.lineTo(plotX-8,headerH);ctx.stroke();ctx.globalAlpha=1;}
+  ctx.strokeStyle=css('--border');ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(0,headerH);ctx.lineTo(w,headerH);ctx.stroke();
+  ctx.fillStyle=css('--muted');ctx.font='700 9px Inter, sans-serif';ctx.textAlign='left';ctx.globalAlpha=.85;
+  ctx.fillText('DISRUPTION TIMELINE',10,headerH+23);ctx.globalAlpha=1;
+}
+function drawLaneHighlight(ctx,w,type,x){
+  const lane=chart.lanes[type];if(!lane)return;
+  ctx.fillStyle=colorAlpha(eventColor(type),.10);ctx.fillRect(0,lane.y0,w,lane.y1-lane.y0);
+}
 function drawEmpty(ctx,w,h,text){ctx.fillStyle=css('--muted');ctx.font='12px Inter, sans-serif';ctx.textAlign='center';ctx.fillText(text,w/2,h/2)}
-function drawAxes(ctx,plot,w,h){ctx.font='10px Inter, sans-serif';ctx.fillStyle=css('--muted');ctx.strokeStyle=css('--border');ctx.lineWidth=1;for(let i=0;i<=4;i++){const y=plot.y+plot.h*i/4;ctx.beginPath();ctx.moveTo(plot.x,y);ctx.lineTo(plot.x+plot.w,y);ctx.stroke();ctx.textAlign='right';ctx.fillText(`${Math.round(100*(1-i/4))}%`,plot.x-8,y+3)}for(let i=0;i<=5;i++){const x=plot.x+plot.w*i/5;ctx.beginPath();ctx.moveTo(x,plot.y);ctx.lineTo(x,plot.y+plot.h);ctx.stroke();ctx.textAlign='center';ctx.fillText(formatTime(settings.horizonDays*i/5),x,plot.y+plot.h+20)}ctx.save();ctx.translate(15,plot.y+plot.h/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.fillText('Disruption index',0,0);ctx.restore();ctx.textAlign='left';ctx.fillText('EVENTS',10,17);['mainshock','aftershock','rain','landslide'].forEach(t=>{ctx.fillStyle=eventColor(t);ctx.fillText(labelType(t),10,chart.eventYs[t]+3)})}
+function drawAxes(ctx,plot,w,h){ctx.font='10px Inter, sans-serif';ctx.fillStyle=css('--muted');ctx.strokeStyle=css('--border');ctx.lineWidth=1;for(let i=0;i<=4;i++){const y=plot.y+plot.h*i/4;ctx.beginPath();ctx.moveTo(plot.x,y);ctx.lineTo(plot.x+plot.w,y);ctx.stroke();ctx.textAlign='right';ctx.fillText(`${Math.round(100*(1-i/4))}%`,plot.x-8,y+3)}for(let i=0;i<=5;i++){const x=plot.x+plot.w*i/5;ctx.beginPath();ctx.moveTo(x,plot.y);ctx.lineTo(x,plot.y+plot.h);ctx.stroke();ctx.textAlign='center';ctx.fillText(formatTime(settings.horizonDays*i/5),x,plot.y+plot.h+20)}ctx.save();ctx.translate(15,plot.y+plot.h/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.fillText('Disruption index',0,0);ctx.restore();}
 function seriesValueAt(series,t){if(!series?.length)return 0;if(t<=series[0].x)return series[0].y;let lo=0,hi=series.length-1;while(lo+1<hi){const mid=(lo+hi)>>1;if(series[mid].x<=t)lo=mid;else hi=mid}const a=series[lo],b=series[hi];if(t>=b.x)return b.y;const u=(t-a.x)/Math.max(1e-12,b.x-a.x);return a.y+u*(b.y-a.y)}
 function drawSeries(ctx,series,plot,color,width,limit=null){ctx.beginPath();let drawn=0;for(const pt of series){if(limit!=null&&pt.x>limit)break;const x=plot.x+pt.x/settings.horizonDays*plot.w,y=plot.y+(1-pt.y)*plot.h;drawn?ctx.lineTo(x,y):ctx.moveTo(x,y);drawn++}if(limit!=null&&limit<settings.horizonDays){const yv=seriesValueAt(series,limit),x=plot.x+limit/settings.horizonDays*plot.w,y=plot.y+(1-yv)*plot.h;drawn?ctx.lineTo(x,y):ctx.moveTo(x,y)}ctx.strokeStyle=color;ctx.lineWidth=width;ctx.lineJoin='round';ctx.lineCap='round';ctx.stroke()}
 function eventColor(type){return type==='mainshock'?css('--quake'):type==='aftershock'?css('--after'):type==='rain'?css('--rain'):css('--slide')}function labelType(t){return({mainshock:'Mainshock',aftershock:'Aftershock',rain:'Rain',landslide:'Landslide'})[t]||t}
 function formatTime(days){if(settings.horizonDays<=180)return`Day ${Math.round(days)}`;if(settings.horizonDays<=730)return`${(days/30.44).toFixed(days<30?1:0)} mo`;return`${(days/365).toFixed(1)} yr`}
 
-function drawMCHistogram(){const canvas=$('mcCanvas'),{ctx,w,h}=fitCanvas(canvas);ctx.clearRect(0,0,w,h);ctx.fillStyle=css('--surface');ctx.fillRect(0,0,w,h);if(!state.mc){drawEmpty(ctx,w,h,'Monte Carlo distribution appears after a simulation.');const summary=$('mcSummary');if(summary)summary.textContent='Run the simulator to calculate an accessible summary of the downtime distribution.';return}const valsB=state.mc.base.map(x=>x.downtime),valsM=state.mc.mit.map(x=>x.downtime);let max=1;for(const v of valsB)if(v>max)max=v;for(const v of valsM)if(v>max)max=v;const bins=18,bB=Array(bins).fill(0),bM=Array(bins).fill(0);valsB.forEach(v=>bB[Math.min(bins-1,Math.floor(v/max*bins))]++);valsM.forEach(v=>bM[Math.min(bins-1,Math.floor(v/max*bins))]++);let peak=1;for(const v of bB)if(v>peak)peak=v;for(const v of bM)if(v>peak)peak=v;const pad={l:42,r:16,t:20,b:34},pw=w-pad.l-pad.r,ph=h-pad.t-pad.b;ctx.strokeStyle=css('--border');ctx.fillStyle=css('--muted');ctx.font='10px Inter';for(let i=0;i<=4;i++){const y=pad.t+ph*i/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(pad.l+pw,y);ctx.stroke()}for(let i=0;i<bins;i++){const x=pad.l+i*pw/bins,bw=pw/bins*.42,hb=bB[i]/peak*ph,hm=bM[i]/peak*ph;ctx.fillStyle=colorAlpha(css('--danger'),.62);ctx.fillRect(x,pad.t+ph-hb,bw,hb);ctx.fillStyle=colorAlpha(css('--accent'),.72);ctx.fillRect(x+bw,pad.t+ph-hm,bw,hm)}ctx.fillStyle=css('--muted');ctx.textAlign='center';for(let i=0;i<=4;i++){const x=pad.l+pw*i/4;ctx.fillText(`${Math.round(max*i/4)} d`,x,h-12)}ctx.textAlign='left';ctx.fillText('Frequency',4,16);const sm=state.mc.summary,summary=$('mcSummary');if(summary)summary.textContent=`Across ${settings.runs.toLocaleString()} paired catalogues, mean downtime is ${fmt(sm.downtimeB,1)} days at baseline and ${fmt(sm.downtimeM,1)} days with measures. The 90th percentile changes from ${fmt(sm.p90B,1)} to ${fmt(sm.p90M,1)} days.`}
+const mcChart={pad:{l:44,r:16,t:24,b:34},bins:18,max:1,peak:1,bB:[],bM:[]};
+function drawMCHistogram(){const canvas=$('mcCanvas'),{ctx,w,h}=fitCanvas(canvas);ctx.clearRect(0,0,w,h);ctx.fillStyle=css('--surface');ctx.fillRect(0,0,w,h);if(!state.mc){drawEmpty(ctx,w,h,'Monte Carlo distribution appears after a simulation.');const summary=$('mcSummary');if(summary)summary.textContent='Run the simulator to calculate an accessible summary of the downtime distribution.';const statRow=$('mcStatRow');if(statRow)statRow.innerHTML='';return}
+  const valsB=state.mc.base.map(x=>x.downtime),valsM=state.mc.mit.map(x=>x.downtime);
+  let max=1;for(const v of valsB)if(v>max)max=v;for(const v of valsM)if(v>max)max=v;
+  const bins=18,bB=Array(bins).fill(0),bM=Array(bins).fill(0);
+  valsB.forEach(v=>bB[Math.min(bins-1,Math.floor(v/max*bins))]++);
+  valsM.forEach(v=>bM[Math.min(bins-1,Math.floor(v/max*bins))]++);
+  let peak=1;for(const v of bB)if(v>peak)peak=v;for(const v of bM)if(v>peak)peak=v;
+  const pad=mcChart.pad,pw=w-pad.l-pad.r,ph=h-pad.t-pad.b;
+  Object.assign(mcChart,{max,peak,bB,bM,w,h});
+  ctx.strokeStyle=css('--border');ctx.fillStyle=css('--muted');ctx.font='9.5px Inter';
+  for(let i=0;i<=4;i++){const y=pad.t+ph*i/4;ctx.beginPath();ctx.moveTo(pad.l,y);ctx.lineTo(pad.l+pw,y);ctx.stroke();ctx.textAlign='right';ctx.fillText(`${Math.round(peak*(1-i/4))}`,pad.l-7,y+3)}
+  for(let i=0;i<bins;i++){const x=pad.l+i*pw/bins,bw=pw/bins*.42,hb=bB[i]/peak*ph,hm=bM[i]/peak*ph;ctx.fillStyle=colorAlpha(css('--danger'),.62);ctx.fillRect(x,pad.t+ph-hb,bw,hb);ctx.fillStyle=colorAlpha(css('--accent'),.72);ctx.fillRect(x+bw,pad.t+ph-hm,bw,hm)}
+  ctx.fillStyle=css('--muted');ctx.textAlign='center';for(let i=0;i<=4;i++){const x=pad.l+pw*i/4;ctx.fillText(`${Math.round(max*i/4)} d`,x,h-12)}
+  ctx.save();ctx.translate(12,pad.t+ph/2);ctx.rotate(-Math.PI/2);ctx.textAlign='center';ctx.font='9px Inter';ctx.fillText('Runs',0,0);ctx.restore();
+  const sm=state.mc.summary;
+  const drawMean=(val,color)=>{const mx=pad.l+clamp(val/max,0,1)*pw;ctx.strokeStyle=color;ctx.setLineDash([3,3]);ctx.lineWidth=1.3;ctx.beginPath();ctx.moveTo(mx,pad.t);ctx.lineTo(mx,pad.t+ph);ctx.stroke();ctx.setLineDash([])};
+  drawMean(sm.downtimeB,css('--danger'));drawMean(sm.downtimeM,css('--accent'));
+  const summary=$('mcSummary');if(summary)summary.textContent=`Across ${settings.runs.toLocaleString()} paired catalogues, mean downtime is ${fmt(sm.downtimeB,1)} days at baseline and ${fmt(sm.downtimeM,1)} days with measures. The 90th percentile changes from ${fmt(sm.p90B,1)} to ${fmt(sm.p90M,1)} days.`;
+  renderMCStats(sm);
+}
+function renderMCStats(sm){const el=$('mcStatRow');if(!el)return;const rows=[['Mean downtime',sm.downtimeB,sm.downtimeM],['Median (P50)',sm.p50B,sm.p50M],['90th percentile',sm.p90B,sm.p90M]];el.innerHTML=rows.map(([label,b,m])=>`<div class="mc-stat"><div class="mc-stat-label">${label}</div><div class="mc-stat-values"><span class="mc-stat-b">${fmt(b,0)}d</span><span class="mc-stat-arrow">→</span><span class="mc-stat-m">${fmt(m,0)}d</span></div></div>`).join('')}
+function mcPointer(e){if(!state.mc)return;const rect=$('mcCanvas').getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;const pad=mcChart.pad,pw=rect.width-pad.l-pad.r,ph=rect.height-pad.t-pad.b;if(x<pad.l||x>pad.l+pw||y<pad.t||y>pad.t+ph){hideMCTooltip();return}
+  const bin=clamp(Math.floor((x-pad.l)/pw*mcChart.bins),0,mcChart.bins-1);
+  const lo=(bin/mcChart.bins*mcChart.max),hi=((bin+1)/mcChart.bins*mcChart.max);
+  const cb=mcChart.bB[bin]||0,cm=mcChart.bM[bin]||0;
+  const tip=$('mcTooltip');tip.innerHTML=`<strong>${fmt(lo,0)}–${fmt(hi,0)} days downtime</strong><br>Baseline: ${cb} run${cb===1?'':'s'}<br>With measures: ${cm} run${cm===1?'':'s'}`;
+  const canvasRect=$('mcCanvas').getBoundingClientRect();tip.style.left=`${clamp(canvasRect.left+x,110,window.innerWidth-110)}px`;tip.style.top=`${Math.max(canvasRect.top+pad.t-8,74)}px`;tip.classList.add('show');
+}
+function hideMCTooltip(){const tip=$('mcTooltip');if(tip)tip.classList.remove('show')}
 function colorAlpha(color,a){if(color.startsWith('#')){let h=color.slice(1);if(h.length===3)h=h.split('').map(c=>c+c).join('');const n=parseInt(h,16);return`rgba(${n>>16},${n>>8&255},${n&255},${a})`}return color}
-function renderComparison(){const s=state.mc?.summary;if(!s)return;const sub=$('mcCompareSub');if(sub)sub.textContent=`Paired statistics across ${settings.runs.toLocaleString()} simulated catalogues—not the selected realisation above.`;const rows=[['Mean downtime',s.downtimeB,s.downtimeM,'days'],['90th-percentile downtime',s.p90B,s.p90M,'days'],['Mean peak disruption',100*s.damageB,100*s.damageM,'%'],['Probability of landslide',100*s.slideB,100*s.slideM,'%'],['Probability disruption > 50%',100*s.severeB,100*s.severeM,'%'],['Recovery interrupted',100*s.interruptB,100*s.interruptM,'%']];$('compareBody').innerHTML=rows.map(([n,b,m,u])=>{const change=b?100*(m-b)/b:0;return`<tr><td>${n}</td><td>${fmt(b,1)}${u}</td><td>${fmt(m,1)}${u}</td><td class="${change<=0?'better':''}">${change<=0?'−':'+'}${fmt(Math.abs(change),0)}%</td></tr>`}).join('')}
-function renderStory(){const events=state.baseline?.events||[];if(!events.length){state.storyIndices=[];$('storyList').innerHTML='<div class="empty-state">No hazard events occurred in this realisation. The Monte Carlo comparison still captures event probability across many catalogues.</div>';return}const indexed=events.map((ev,i)=>({ev,i}));let shown=indexed;if(events.length>160)shown=indexed.filter(({ev,i})=>ev.type==='mainshock'||ev.type==='landslide'||ev.damageAfter-ev.damageBefore>.025||i<12).slice(0,160);state.storyIndices=shown.map(x=>x.i);$('storyList').innerHTML=shown.map(({ev,i})=>`<article class="story-item" data-event-index="${i}" tabindex="-1"><div class="story-time">${formatTime(ev.time)}</div><i class="story-marker" style="background:${eventColor(ev.type)}"></i><div><div class="story-title">${storyTitle(ev)}</div><div class="story-text">${storyText(ev)}</div></div></article>`).join('')+(shown.length<events.length?`<div class="story-overflow-note">Showing ${shown.length} key events from ${events.length.toLocaleString()} total events.</div>`:'');highlightStoryRow(state.selectedEvent,false)}
+function renderComparison(){const s=state.mc?.summary;if(!s)return;const sub=$('mcCompareSub');if(sub)sub.textContent=`Averaged across ${settings.runs.toLocaleString()} runs — same caveat as the chart on the left.`;const rows=[['Mean downtime',s.downtimeB,s.downtimeM,'days'],['90th-percentile downtime',s.p90B,s.p90M,'days'],['Mean peak disruption',100*s.damageB,100*s.damageM,'%'],['Probability of landslide',100*s.slideB,100*s.slideM,'%'],['Probability disruption > 50%',100*s.severeB,100*s.severeM,'%'],['Recovery interrupted',100*s.interruptB,100*s.interruptM,'%']];$('compareBody').innerHTML=rows.map(([n,b,m,u])=>{const change=b?100*(m-b)/b:0;return`<tr><td>${n}</td><td>${fmt(b,1)}${u}</td><td>${fmt(m,1)}${u}</td><td class="${change<=0?'better':''}">${change<=0?'−':'+'}${fmt(Math.abs(change),0)}%</td></tr>`}).join('')}
+function renderStory(){const events=state.baseline?.events||[];if(!events.length){state.storyIndices=[];$('storyList').innerHTML='<div class="empty-state">No hazard events occurred in this realisation. The Monte Carlo comparison still captures event probability across many catalogues.</div>';return}const indexed=events.map((ev,i)=>({ev,i}));let shown=indexed;if(events.length>160)shown=indexed.filter(({ev,i})=>ev.type==='mainshock'||ev.type==='landslide'||ev.damageAfter-ev.damageBefore>.025||i<12).slice(0,160);state.storyIndices=shown.map(x=>x.i);
+  $('storyList').innerHTML=shown.map(({ev,i})=>{
+    const delta=Math.round(100*(ev.damageAfter-ev.damageBefore)),pct=Math.round(100*ev.damageAfter),color=eventColor(ev.type);
+    const interruptTag=ev.interrupted?`<span class="story-tag">⏸️ Recovery interrupted</span>`:'';
+    return `<article class="story-item" data-event-index="${i}" tabindex="-1">
+      <div class="story-time">${formatTime(ev.time)}</div>
+      <div class="story-icon-col"><span class="story-icon" style="background:${color}">${eventGlyph(ev.type)}</span></div>
+      <div class="story-content">
+        <div class="story-title">${storyTitle(ev)}</div>
+        <div class="story-text">${storyText(ev)}</div>
+        <div class="story-impact">
+          <span class="impact-label">Disruption</span>
+          <div class="impact-bar"><div class="impact-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+          <span class="impact-value">${pct}%</span>
+          ${delta>0?`<span class="impact-delta up">▲ ${delta}%</span>`:''}
+          ${interruptTag}
+        </div>
+      </div>
+    </article>`;
+  }).join('')+(shown.length<events.length?`<div class="story-overflow-note">Showing ${shown.length} key events from ${events.length.toLocaleString()} total events.</div>`:'');
+  highlightStoryRow(state.selectedEvent,false)
+}
 function highlightStoryRow(eventIndex,scroll=false){const rows=[...document.querySelectorAll('#storyList .story-item')];rows.forEach(r=>{r.classList.remove('active');r.removeAttribute('aria-current')});if(!rows.length||eventIndex<0)return;let target=rows.find(r=>Number(r.dataset.eventIndex)===eventIndex);if(!target){const eligible=rows.filter(r=>Number(r.dataset.eventIndex)<=eventIndex);target=eligible[eligible.length-1]||rows[0]}target.classList.add('active');target.setAttribute('aria-current','true');if(scroll&&state.playing)target.scrollIntoView({block:'nearest',behavior:'smooth'})}
+function eventGlyph(type){const icons={
+  mainshock:'<path d="M2 12h4l2.5-7 4 14 2.5-7H20"/>',
+  aftershock:'<path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/>',
+  rain:'<path d="M6 14a4 4 0 1 1 .9-7.9A5 5 0 0 1 17 9a3.5 3.5 0 0 1-.5 7H6z"/><path d="M8 18l-1.5 3M12.5 18l-1.5 3M17 18l-1.5 3"/>',
+  landslide:'<path d="M3 20 10 5l4 8 3-4 4 11H3z"/>'
+};return`<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${icons[type]||''}</svg>`}
 function storyTitle(ev){if(ev.type==='mainshock')return`Mw ${ev.mag.toFixed(1)} mainshock`;if(ev.type==='aftershock')return`Mw ${ev.mag.toFixed(1)} aftershock`;if(ev.type==='rain')return`${Math.round(ev.intensity)} mm/day heavy-rain event`;return`Landslide triggered by ${ev.trigger}`}
 function storyText(ev){if(ev.type==='landslide')return`Trigger probability was ${fmt(100*ev.probability,0)}%. Disruption increased from ${fmt(100*ev.damageBefore,0)}% to ${fmt(100*ev.damageAfter,0)}%.`;if(ev.type==='rain')return`Rainfall acted on a transient slope-weakening index of ${fmt(100*ev.weakening,0)}%, giving a ${fmt(100*ev.landslideProbability,0)}% landslide trigger probability.`;return`Local shaking severity index ${fmt(100*ev.severity,0)}%. Disruption changed from ${fmt(100*ev.damageBefore,0)}% to ${fmt(100*ev.damageAfter,0)}%; landslide trigger probability ${fmt(100*ev.landslideProbability,0)}%.`}
 function renderInsights(){if(!state.baseline)return;const b=state.baseline,level=b.severityScore<.25?'Low':b.severityScore<.5?'Moderate':b.severityScore<.75?'High':'Very high';document.querySelectorAll('.severity-value').forEach(el=>el.textContent=level);document.querySelectorAll('.severity-meter').forEach(el=>el.style.width=`${100*b.severityScore}%`);document.querySelectorAll('.severity-text').forEach(el=>el.textContent=`Peak disruption ${fmt(100*b.maxDamage,0)}%, ${fmt(b.downtime,1)} downtime days and a maximum ${b.cluster}-event cluster within seven days.`);const counts={mainshock:countType(b.events,'mainshock'),aftershock:countType(b.events,'aftershock'),rain:countType(b.events,'rain'),landslide:countType(b.events,'landslide')};document.querySelectorAll('.event-chips-target').forEach(el=>el.innerHTML=Object.entries(counts).map(([t,n])=>`<span class="chip"><i style="background:${eventColor(t)}"></i>${n} ${labelType(t)}</span>`).join(''));let driver='No damaging sequence occurred in this selected realisation.';if(b.events.length){const dominant=[...b.events].sort((a,c)=>(c.damageAfter-c.damageBefore)-(a.damageAfter-a.damageBefore))[0];driver=`The largest disruption increment came from ${storyTitle(dominant).toLowerCase()}. ${b.interruptions?`${b.interruptions} event${b.interruptions===1?'':'s'} occurred while disruption remained above the downtime threshold.`:'Recovery was not materially interrupted by another damaging event.'} ${b.slides?`${b.slides} landslide${b.slides===1?' was':'s were'} triggered by the interaction rules.`:'No landslide trigger was realised.'}`};document.querySelectorAll('.driver-narrative').forEach(el=>el.textContent=driver)}
 
-function timelinePointer(e){if(!state.baseline?.events.length)return;const rect=$('timelineCanvas').getBoundingClientRect(),x=e.clientX-rect.left,p=chart.pad,plotW=rect.width-p.l-p.r,t=clamp((x-p.l)/plotW,0,1)*settings.horizonDays;let best=0,dist=Infinity;state.baseline.events.forEach((ev,i)=>{const d=Math.abs(ev.time-t);if(d<dist){dist=d;best=i}});state.selectedEvent=best;showEventTooltip(e,state.baseline.events[best]);drawTimeline()}
-function showEventTooltip(e,ev){const wrap=$('timelineWrap').getBoundingClientRect(),tip=$('timelineTooltip');tip.innerHTML=`<strong>${storyTitle(ev)}</strong><br>${formatTime(ev.time)}<br>${storyText(ev)}`;tip.style.left=`${clamp(e.clientX-wrap.left,110,wrap.width-110)}px`;tip.style.top=`${clamp(e.clientY-wrap.top,90,wrap.height-20)}px`;tip.classList.add('show')}
+function timelinePointer(e){
+  if(!state.baseline?.events.length)return;
+  const rect=$('timelineCanvas').getBoundingClientRect(),x=e.clientX-rect.left,y=e.clientY-rect.top;
+  const p=chart.pad,plotW=rect.width-p.l-p.r;
+  const clearHover=()=>{if(state.hoverEvent!=null){state.hoverEvent=null;hideTooltip();drawTimeline();}};
+  if(y<0||y>chart.headerH){clearHover();return;}
+  let hoverType=null;
+  for(const t of ['mainshock','aftershock','rain','landslide']){const lane=chart.lanes[t];if(y>=lane.y0&&y<lane.y1){hoverType=t;break;}}
+  if(!hoverType){clearHover();return;}
+  const t=clamp((x-p.l)/plotW,0,1)*settings.horizonDays;
+  let best=-1,dist=Infinity;
+  state.baseline.events.forEach((ev,i)=>{if(ev.type!==hoverType)return;const d=Math.abs(ev.time-t);if(d<dist){dist=d;best=i;}});
+  const pxPerDay=plotW/settings.horizonDays,pxDist=dist*pxPerDay;
+  if(best<0||pxDist>16){clearHover();return;}
+  if(state.hoverEvent===best)return;
+  state.hoverEvent=best;state.selectedEvent=best;
+  const ev=state.baseline.events[best],evX=p.l+ev.time/settings.horizonDays*plotW,evY=chart.eventYs[ev.type]||25;
+  showEventTooltip(evX,evY,ev);drawTimeline();
+}
+function showEventTooltip(x,y,ev){const canvasRect=$('timelineCanvas').getBoundingClientRect(),tip=$('timelineTooltip');tip.innerHTML=`<strong>${storyTitle(ev)}</strong><br>${formatTime(ev.time)}<br>${storyText(ev)}`;const px=canvasRect.left+x,py=canvasRect.top+y;tip.style.left=`${clamp(px,110,window.innerWidth-110)}px`;tip.style.top=`${Math.max(py,74)}px`;tip.classList.add('show')}
 function hideTooltip(){$('timelineTooltip').classList.remove('show')}
 function timelineKey(e){if(!state.baseline?.events.length)return;if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();if(e.key==='ArrowLeft')state.selectedEvent=Math.max(0,state.selectedEvent-1);if(e.key==='ArrowRight')state.selectedEvent=Math.min(state.baseline.events.length-1,state.selectedEvent+1);if(e.key==='Home')state.selectedEvent=0;if(e.key==='End')state.selectedEvent=state.baseline.events.length-1;const ev=state.baseline.events[state.selectedEvent];announce(`${storyTitle(ev)}, ${formatTime(ev.time)}. ${storyText(ev)}`);drawTimeline()}
 function setPlayButton(){if(!$('playBtn'))return;$('playBtn').innerHTML=state.playing?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M8 5v14M16 5v14"/></svg><span class="desktop-label">Pause</span>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m8 5 11 7-11 7Z"/></svg><span class="desktop-label">Play sequence</span>'}
@@ -504,13 +681,16 @@ function announce(text){$('liveRegion').textContent='';setTimeout(()=>$('liveReg
 function openDrawer(which){$('drawerBackdrop').classList.add('show');$(which).classList.add('show');document.body.style.overflow='hidden'}function closeDrawers(){$('drawerBackdrop').classList.remove('show');document.querySelectorAll('.drawer').forEach(d=>d.classList.remove('show'));document.body.style.overflow=''}
 function showWelcome(force=false){if(force||!storageGet('hazardSequenceWelcome'))$('welcomeModal').classList.add('show')}function hideWelcome(){$('welcomeModal').classList.remove('show');storageSet('hazardSequenceWelcome','1')}
 function resize(){drawTimeline();drawMCHistogram()}
+function updateThemeIcon(){const btn=$('themeBtn');if(!btn)return;const isDark=document.documentElement.dataset.theme==='dark';btn.innerHTML=isDark?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4.5"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/></svg>':'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 15.2A8 8 0 1 1 8.8 4a6.5 6.5 0 0 0 11.2 11.2Z"/></svg>';btn.setAttribute('aria-label',isDark?'Switch to light mode':'Switch to dark mode')}
 
 function init(){mountPanels();validateSettings();runScientificTests();bindSelfTestTriggers();showWelcome();
   $('runBtn').addEventListener('click',runAll);$('playBtn').addEventListener('click',togglePlay);$('resetViewBtn').addEventListener('click',()=>{state.playing=false;cancelAnimationFrame(state.raf);state.playhead=0;state.selectedEvent=0;state.playbackActive=false;state.playbackEvent=-1;state.playbackPulseUntil=0;setPlayButton();highlightStoryRow(0,false);updatePlayReadout();drawTimeline()});$('downloadCsvBtn').addEventListener('click',downloadCSV);$('downloadJsonBtn').addEventListener('click',downloadJSON);$('downloadPngBtn').addEventListener('click',downloadPNG);
-  $('themeBtn').addEventListener('click',()=>{const d=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=d?'light':'dark';storageSet('hazardTheme',d?'light':'dark');resize()});const saved=storageGet('hazardTheme');if(saved)document.documentElement.dataset.theme=saved;
+  $('themeBtn').addEventListener('click',()=>{const d=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=d?'light':'dark';storageSet('hazardTheme',d?'light':'dark');updateThemeIcon();resize()});const saved=storageGet('hazardTheme');if(saved)document.documentElement.dataset.theme=saved;updateThemeIcon();
   $('helpBtn').addEventListener('click',()=>showWelcome(true));$('dismissWelcome').addEventListener('click',hideWelcome);$('tryExample').addEventListener('click',()=>{hideWelcome();applyPreset('cascade');setTimeout(runAll,40)});$('closeSelfTests').addEventListener('click',hideSelfTests);$('selfTestModal').addEventListener('click',e=>{if(e.target===$('selfTestModal'))hideSelfTests()});
   $('openControls').addEventListener('click',()=>openDrawer('controlsDrawer'));$('openInsights').addEventListener('click',()=>openDrawer('insightsDrawer'));$('drawerBackdrop').addEventListener('click',closeDrawers);document.querySelectorAll('[data-close-drawer]').forEach(b=>b.addEventListener('click',closeDrawers));
-  $('timelineCanvas').addEventListener('mousemove',timelinePointer);$('timelineCanvas').addEventListener('mouseleave',hideTooltip);$('timelineCanvas').addEventListener('keydown',timelineKey);window.addEventListener('resize',()=>{clearTimeout(resize.t);resize.t=setTimeout(resize,100)});window.addEventListener('keydown',e=>{if(e.key==='Escape'){hideSelfTests();closeDrawers()}});
+  $('timelineCanvas').addEventListener('mousemove',timelinePointer);$('timelineCanvas').addEventListener('mouseleave',()=>{state.hoverEvent=null;hideTooltip();drawTimeline();});$('timelineCanvas').addEventListener('keydown',timelineKey);
+  $('mcCanvas').addEventListener('mousemove',mcPointer);$('mcCanvas').addEventListener('mouseleave',hideMCTooltip);
+  window.addEventListener('resize',()=>{clearTimeout(resize.t);resize.t=setTimeout(resize,100)});window.addEventListener('keydown',e=>{if(e.key==='Escape'){hideSelfTests();closeDrawers()}});
   requestAnimationFrame(()=>{drawTimeline();drawMCHistogram();updatePlayReadout()});
 }
 init();
