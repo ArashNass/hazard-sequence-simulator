@@ -123,10 +123,14 @@
 <meta name="twitter:title" content="Multi-Hazard Sequence Simulator | Arash Nassirpour">
 <meta name="twitter:description" content="Simulate interacting earthquakes, aftershocks, rainfall and landslides to explore cascading hazards, recovery interruptions and resilience."><meta name="twitter:image" content="https://arashnassirpour.com/hazard-sequence-simulator/og-image.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Multi-Hazard Sequence Simulator","description":"Simulate interacting earthquakes, aftershocks, rainfall and landslides to explore cascading hazards, recovery interruptions and resilience.","url":"https://arashnassirpour.com/hazard-sequence-simulator/","applicationCategory":"EducationalApplication","operatingSystem":"Any","isAccessibleForFree":true,"author":{"@type":"Person","name":"Arash Nassirpour","url":"https://arashnassirpour.com/about/"}}</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0WERZ6WKQY"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-0WERZ6WKQY");</script><style>
+<script defer src="/assets/analytics.js?v=2"></script><style>
 /* phones: 16px form fields stop iOS Safari zooming the page in when one is tapped */
 @media (max-width:760px){input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=color]):not([type=file]),select,textarea{font-size:16px!important}}
 </style>
+
+<script defer src="/assets/engagement.js?v=1"></script>
+<script type="module" src="/assets/vitals.js?v=1"></script>
+<link rel="stylesheet" href="/assets/tool-guide.css?v=1">
 </head>
 <body>
 <header class="site-hd"><style>
@@ -235,7 +239,7 @@
         <div class="hero-actions">
           <div class="play-readout" id="playReadout" aria-live="polite">Run a simulation to play the sequence.</div>
           <button class="btn" id="playBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="m8 5 11 7-11 7Z"/></svg><span class="desktop-label">Play sequence</span></button>
-          <button class="btn btn-primary" id="runBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v6h-6"/></svg>Run simulation</button>
+          <button class="btn btn-primary" id="runBtn" data-track-action="simulation_requested"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v6h-6"/></svg>Run simulation</button>
         </div>
       </section>
 
@@ -250,7 +254,7 @@
       </section>
 
       <section class="card" id="timelineCard">
-        <div class="card-head"><div><h2>Sequence timeline and recovery</h2><p>Event markers above; disruption trajectories below. Hover or use arrow keys to inspect events.</p></div><div class="card-actions"><button class="btn btn-ghost" id="resetViewBtn">Reset view</button><button class="btn btn-ghost" id="downloadPngBtn">PNG</button></div></div>
+        <div class="card-head"><div><h2>Sequence timeline and recovery</h2><p>Event markers above; disruption trajectories below. Hover or use arrow keys to inspect events.</p></div><div class="card-actions"><button class="btn btn-ghost" id="resetViewBtn">Reset view</button><button class="btn btn-ghost" id="downloadPngBtn" data-track-action="export_requested">PNG</button></div></div>
         <div class="canvas-wrap" id="timelineWrap"><canvas class="chart-canvas" id="timelineCanvas" tabindex="0" aria-label="Timeline chart of hazard events and asset disruption"></canvas><div class="chart-tooltip" id="timelineTooltip"></div><div class="run-overlay" id="runOverlay"><div><div class="spinner" aria-hidden="true"></div><div class="hint" style="margin-top:10px">Simulating event catalogues…</div></div></div></div>
         <div class="legend"><span class="legend-item"><i class="legend-dot" style="background:var(--quake)"></i>Mainshock</span><span class="legend-item"><i class="legend-dot" style="background:var(--after)"></i>Aftershock</span><span class="legend-item"><i class="legend-dot" style="background:var(--rain)"></i>Heavy rain</span><span class="legend-item"><i class="legend-dot" style="background:var(--slide)"></i>Landslide</span><span class="legend-item"><i class="legend-line" style="background:var(--danger)"></i>Baseline disruption</span><span class="legend-item"><i class="legend-line" style="background:var(--accent)"></i>With measures</span></div>
       </section>
@@ -270,7 +274,7 @@
       </div>
 
       <section class="card">
-        <div class="card-head"><div><h2>Sequence narrative</h2><p>Full chronological log — every event in this run, in order.</p></div><div class="card-actions"><button class="btn btn-ghost" id="downloadCsvBtn">CSV</button><button class="btn btn-ghost" id="downloadJsonBtn">JSON</button></div></div>
+        <div class="card-head"><div><h2>Sequence narrative</h2><p>Full chronological log — every event in this run, in order.</p></div><div class="card-actions"><button class="btn btn-ghost" id="downloadCsvBtn" data-track-action="export_requested">CSV</button><button class="btn btn-ghost" id="downloadJsonBtn" data-track-action="export_requested">JSON</button></div></div>
         <div class="story-list" id="storyList"><div class="empty-state">Run a scenario to generate an event-by-event narrative.</div></div>
       </section>
     </div>
@@ -542,7 +546,7 @@ async function runAll(){
   closeDrawers();$('runOverlay').classList.add('show');$('runBtn').disabled=true;
   await new Promise(r=>setTimeout(r,30));
   state.catalog=generateCatalog(settings.seed);state.baseline=evaluateCatalog(state.catalog,false);state.mitigated=evaluateCatalog(state.catalog,true);state.selectedEvent=0;state.playhead=0;state.playbackActive=false;state.playbackEvent=-1;state.playbackPulseUntil=0;
-  await runMonteCarlo();state.stale=false;document.querySelectorAll('#timelineCard,.mc-grid .card').forEach(el=>el.classList.remove('pending'));renderAll();updateRunStatus();$('runOverlay').classList.remove('show');$('runBtn').disabled=false;announce(`Simulation complete. ${state.baseline.hazardCount} hazard events and ${state.baseline.slides} triggered landslides in the selected sequence.`)
+  await runMonteCarlo();state.stale=false;window.PlatformMetrics?.complete('simulate');document.querySelectorAll('#timelineCard,.mc-grid .card').forEach(el=>el.classList.remove('pending'));renderAll();updateRunStatus();$('runOverlay').classList.remove('show');$('runBtn').disabled=false;announce(`Simulation complete. ${state.baseline.hazardCount} hazard events and ${state.baseline.slides} triggered landslides in the selected sequence.`)
 }
 async function runMonteCarlo(){
   const base=[],mit=[];const chunk=40;for(let i=0;i<settings.runs;i++){const catalog=generateCatalog((settings.seed+i*2654435761)>>>0);base.push(evaluateCatalog(catalog,false));mit.push(evaluateCatalog(catalog,true));if(i%chunk===chunk-1){$('runCountBadge').textContent=`${i+1} / ${settings.runs} paired runs`;await new Promise(r=>setTimeout(r,0))}}
@@ -716,7 +720,7 @@ function hideSelfTests(){$('selfTestModal').classList.remove('show');document.qu
 function runScientificTests(){const tests=[];const add=(name,fn)=>{try{tests.push({name,pass:!!fn()})}catch(e){tests.push({name,pass:false,error:e.message})}};add('Seeded RNG repeatability',()=>{const a=mulberry32(9),b=mulberry32(9);return a()===b()&&a()===b()});add('Zero-rate Poisson',()=>poisson(0,mulberry32(1))===0);add('Gutenberg–Richter bounds',()=>{const r=mulberry32(2);for(let i=0;i<1000;i++){const m=truncatedGR(r,4,7,1);if(m<4||m>7)return false}return true});add('Omori time bounds',()=>{const r=mulberry32(3);for(let i=0;i<1000;i++){const t=omoriTime(r,.05,1.05,90);if(t<0||t>90)return false}return true});add('Omori p=1 limit',()=>{const t=omoriTime(()=>.5,.1,1,10);return Number.isFinite(t)&&t>0&&t<10});add('Severity bounded',()=>eqSeverity(9,1,1)<=1&&eqSeverity(3,300,0)>=0);add('Recovery reduces disruption',()=>{const cat=[{id:1,type:'mainshock',time:1,mag:7,severity:.9,landslideU:1}];const r=evaluateCatalog(cat,false);return r.finalDamage<r.maxDamage});add('Mitigation non-increasing for fixed catalogue',()=>{const cat=generateCatalog(81),b=evaluateCatalog(cat,false),m=evaluateCatalog(cat,true);return m.maxDamage<=b.maxDamage+1e-12&&m.downtime<=b.downtime+1e-12});add('No non-finite outputs',()=>{const r=evaluateCatalog(generateCatalog(90),false);return[r.maxDamage,r.downtime,r.severityScore].every(Number.isFinite)&&r.series.every(p=>Number.isFinite(p.x)&&Number.isFinite(p.y))});add('Landslide probability bounded',()=>{const cat=generateCatalog(300),r=evaluateCatalog(cat,false);return r.events.every(e=>e.landslideProbability==null||(e.landslideProbability>=0&&e.landslideProbability<=1))});add('Consistent interruption threshold',()=>countsAsInterruption(.5,.016,.3)&&!countsAsInterruption(.5,.015,.3)&&!countsAsInterruption(.2,.2,.3));state.selfTests=tests;renderSelfTestStatus();return tests.every(t=>t.pass)}
 
 function showToast(text){const toast=$('toast');if(!toast)return;toast.textContent=text;toast.classList.add('show');clearTimeout(showToast.t);showToast.t=setTimeout(()=>toast.classList.remove('show'),2200)}
-function download(name,content,type='text/plain'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);showToast(`${name} downloaded`)}
+function download(name,content,type='text/plain'){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type}));a.download=name;a.click();window.PlatformMetrics?.emit('export_ready',{format:type.includes('csv')?'csv':type.includes('json')?'json':'text'});setTimeout(()=>URL.revokeObjectURL(a.href),500);showToast(`${name} downloaded`)}
 function downloadCSV(){if(!state.baseline)return;const rows=['time_days,type,magnitude,intensity,severity,trigger,damage_before,damage_after,landslide_probability'];state.baseline.events.forEach(e=>rows.push([e.time,e.type,e.mag??'',e.intensity??'',e.severity??'',e.trigger??'',e.damageBefore??'',e.damageAfter??'',e.landslideProbability??''].join(',')));download('hazard-sequence-events.csv',rows.join('\n'),'text/csv')}
 function downloadJSON(){if(!state.baseline)return;download('hazard-sequence-simulation.json',JSON.stringify({version:'1.3-original-screening',settings,catalog:state.catalog,baseline:state.baseline,mitigated:state.mitigated,monteCarlo:state.mc?.summary,selfTests:state.selfTests},null,2),'application/json')}
 function downloadPNG(){if(!state.baseline)return;const c=document.createElement('canvas');c.style.width='1800px';c.style.height='1100px';document.body.appendChild(c);drawTimeline(c);c.toBlob(blob=>{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='hazard-sequence-timeline.png';a.click();URL.revokeObjectURL(a.href);c.remove();showToast('hazard-sequence-timeline.png downloaded')},'image/png')}
@@ -739,6 +743,7 @@ function init(){mountPanels();validateSettings();runScientificTests();bindSelfTe
 }
 init();
 </script>
+<section class="platform-guide" aria-labelledby="platform-guide-title"><h2 id="platform-guide-title">Using hazard sequence simulation</h2><p>Explore how earthquakes, rainfall and landslides can cluster and interrupt recovery. The baseline and mitigated cases use paired simulations to compare scenario outcomes.</p><details><summary>Try a worked example</summary><ol><li>Load a built-in scenario and run the simulation.</li><li>Keep the random seed fixed, change one recovery or mitigation setting and rerun.</li><li>Compare the sequence timeline with the Monte Carlo distributions; a single sequence is not the full range of outcomes.</li></ol></details><nav aria-label="Related tools"><a href="/slope-seismic-vulnerability/">Slope seismic vulnerability</a><a href="/hazus/">Vulnerability functions</a></nav></section>
 <footer class="site-ft"><style>
 .site-ft{background:#0f2350;border-top:1px solid rgba(255,255,255,.08);flex-shrink:0;line-height:normal;font-family:Inter,'Segoe UI',system-ui,sans-serif}
 .site-ft .ft-in{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;padding:14px 24px}
